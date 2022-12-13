@@ -1,0 +1,167 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: Russo one;
+}
+*{
+    letter-spacing: 0.2px;
+}
+header{
+    background-color:crimson;
+    height: 174px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.options{
+    width: 700px;
+    margin-left: 550px;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+a{
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.a1:hover{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+.nav2{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform .2s;
+}
+.logo1{
+    height: 50px;
+    width: 150px;
+    margin-right: 40px;
+    margin-top: 4px;
+
+}
+#bikelogo{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.a2:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+.a2{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+}
+.icons{
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h5{
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.copyright{
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 10px white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#myimg{
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgb(255, 226, 110);
+    border-radius: 50%;
+    margin-top: 150px;
+}
+#footimg1{
+    width: 30px;
+    height: 30px;
+}
+#footimg2{
+    width: 35px;
+    height: 35px;
+}
+#footimg3{
+    width: 40px;
+    height: 30px;
+}
+.mainlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#about{
+    color: deeppink;
+    text-shadow: 4px 4px 10px coral;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+#ping{
+    color: black;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+}
+h1{
+    font-size: 56px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 104px;
+    margin-top: 35px;
+    text-shadow: none;
+}
