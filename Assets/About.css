@@ -4,7 +4,7 @@ html{
 body{
     background-color: whitesmoke;
     margin: 0;
-    font-family: Russo one;
+    font-family: 'Russo one', sans-serif;
 }
 *{
     letter-spacing: 0.2px;
