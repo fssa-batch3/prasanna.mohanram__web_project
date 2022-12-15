@@ -71,6 +71,7 @@ footer{
     justify-content: center;
     width: 100%;
 }
+
 #follow{
     color: whitesmoke;
     font-size: 20px;
@@ -78,6 +79,7 @@ footer{
     margin-top: 35px;
     text-shadow: none;
 }
+
 .copyright{
     color: whitesmoke;
     text-align: center;
@@ -128,21 +130,9 @@ h1{
     position: relative;
     bottom: 10px;
 }
-/* .brand:hover{
-    transition: .2s;
-    transform: scale(1.05);
-    box-shadow: 2px 2px 50px 2px gold;
-} */
+
 .brand-a:hover{
     transition: .5s;
     transform: scale(1.05);
     box-shadow: 2px 2px 50px 2px greenyellow;
-}
-
-#follow {
-    color: whitesmoke;
-    font-size: 20px;
-    width: 104px;
-    margin-top: 35px;
-    text-shadow: none;
 }
