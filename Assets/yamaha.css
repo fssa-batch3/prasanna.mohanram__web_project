@@ -3,7 +3,7 @@ html{
 }
 body{
     margin: 0;
-    font-family: Russo One;
+    font-family: Russo One,Sans-serif;
 }
 header{
     background-color:crimson;
