@@ -5,7 +5,11 @@ html {
 body {
     background-color: black;
     margin: 0;
-    font-family: Russo One;
+}
+
+* {
+    font-family: 'Russo one' 'sans-serif';
+    letter-spacing: 0.2px;
 }
 
 header {
@@ -193,11 +197,6 @@ hr {
     color: #111;
     background: white;
     box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 100px white;
-}
-
-* {
-    font-family: "Russo one" sans-serif;
-    letter-spacing: 0.2px;
 }
 
 .second {
