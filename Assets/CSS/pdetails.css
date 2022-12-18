@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/raining-money-8.gif);
+    background-size: cover;
+    background-position-y: 160px;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Russo One;
+}
+
+header {
+    background-color: crimson;
+    height: 174px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 400px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+a {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.container {
+    font-family: Fugaz One;
+    padding: 5px 20px 15px 20px;
+    border: 3px solid paleturquoise;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 500px;
+    width: 500px;
+    height: 750px;
+    background: transparent;
+    text-shadow: 0 0 10px greenyellow;
+}
+
+input[type=text] {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+p {
+    width: 450px;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+}
+
+.icons {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 104px;
+    margin-top: 35px;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    text-shadow: none;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
+
+h3{
+    text-align: center;
+}
+
+.cnt {
+    position: relative;
+    bottom: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+#continue {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: orangered;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#continue span {
+    z-index: 2;
+}
+
+#continue:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: orangered;
+    transition: all .35s;
+    z-index: -2;
+}
+
+#continue:hover {
+    color: whitesmoke;
+    text-shadow: 0 0 10px white;
+}
+
+#continue:hover:after {
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 104px;
+    margin-top: 35px;
+    text-shadow: none;
+}

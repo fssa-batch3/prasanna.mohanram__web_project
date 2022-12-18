@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(rgb(20, 30, 48), rgb(36, 59, 85));
+}
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.login h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.login .inputs {
+  position: relative;
+}
+.login .inputs input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login .inputs label {
+  display: inline-block;
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login .inputs input:focus ~ label,.login .inputs input:valid~label {
+  color: #3eff4b;
+  top: -25px;
+  font-size: 12px;
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+.login form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #3eff4b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 100px;
+  overflow:hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+.login a:hover {
+  background: #3eff4b;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #3eff4b, 0 0 25px #3eff4b, 0 0 50px #3eff4b, 0 0 100px #3eff4b;
+}
+
+#follow {
+  color: whitesmoke;
+  font-size: 20px;
+  width: 104px;
+  margin-top: 35px;
+  text-shadow: none;
+}
+
+.remember{
+  color: white;
+}
+
+input[type=checkbox] {
+  accent-color: #3eff4b;
+}
+
+#new-acc{
+  letter-spacing: 0;
+  text-align: center;
+  color: dimgray;
+  font-size: 10px;
+  margin-left: 75px;
+  margin-bottom: 0;
+}
+
+#new-acc:hover{
+  color: lightgray;
+  background: none;
+  box-shadow: none;
+}

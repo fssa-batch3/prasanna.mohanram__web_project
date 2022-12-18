@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Russo One;
+    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/avenue-656969__340.jpg);
+    background-size: 100%;
+}
+
+header {
+    background-color: crimson;
+    height: 174px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 400px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+a {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+.logo1 {
+    height: 50px;
+    width: 150px;
+    margin-right: 40px;
+    margin-top: 4px;
+
+}
+
+#bikelogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    width: 450px;
+    text-shadow: 2px 2px 10px white;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+}
+
+.icons {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h5 {
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
+
+.model {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.model-img {
+    width: 230px;
+    height: 200px;
+    border: 2px solid gray;
+}
+
+.model-img:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 50px 2px gold;
+}
+
+.hover:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 50px 2px skyblue;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 0 5px gold, 0 0 25px #3eff4b, 0 0 50px #3eff4b, 0 0 100px #3eff4b;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 104px;
+    margin-top: 35px;
+    text-shadow: none;
+}
