@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(Images/motorcycle-nature-wheelie-sunset-wallpaper-preview.jpg);
+    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/motorcycle-nature-wheelie-sunset-wallpaper-preview.jpg);
     background-size: 100%;
     margin: 0;
     font-family: Russo One;
