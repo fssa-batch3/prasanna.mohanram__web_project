@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Russo One;
+    font-family: 'Russo One',sans-serif;
     background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/avenue-656969__340.jpg);
     background-size: 100%;
 }
