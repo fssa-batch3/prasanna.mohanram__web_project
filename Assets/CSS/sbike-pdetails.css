@@ -88,7 +88,6 @@ input {
     width: 100%;
     min-height: 2em;
     background-color: rgb(10, 10, 35);
-    border: 1px solid rgb(10, 10, 35);
     color: rgb(255, 255, 255);
     border: none;
     border-bottom: 3px solid rgb(126, 185, 175);
