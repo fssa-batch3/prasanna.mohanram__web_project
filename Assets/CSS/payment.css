@@ -119,7 +119,7 @@ form{
     justify-content: space-evenly;
     margin: 100px;
     margin-bottom: 100px;
-    font-family: Patua One;
+    font-family: 'Patua One',sans-serif;
 }
 
 input[type="radio"] {
