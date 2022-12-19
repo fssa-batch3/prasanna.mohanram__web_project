@@ -159,11 +159,3 @@ h1 {
     transform: scale(1.05);
     box-shadow: 2px 2px 50px 2px greenyellow;
 }
-
-#follow {
-    color: whitesmoke;
-    font-size: 20px;
-    width: 104px;
-    margin-top: 35px;
-    text-shadow: none;
-}
