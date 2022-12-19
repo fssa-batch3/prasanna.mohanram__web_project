@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(Images/itl.cat_road-hd-wallpaper_348283.png);
+    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/itl.cat_road-hd-wallpaper_348283.png);
     background-size: 100%;
     margin: 0;
     font-family: 'Russo One',sans-serif;
