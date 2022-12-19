@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Russo One;
+    font-family: 'Russo One',sans-serif;
     background: linear-gradient(rgba(255, 194, 71, 0.6),rgba(255, 224, 237, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 200, 0, 0.5)), url(../Images/istockphoto-1175608834-612x612.jpg);
     background-size: cover;
 }
