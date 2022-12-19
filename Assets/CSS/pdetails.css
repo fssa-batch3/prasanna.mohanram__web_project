@@ -8,7 +8,7 @@ body {
     background-position-y: 160px;
     background-repeat: no-repeat;
     margin: 0;
-    font-family: Russo One;
+    font-family: 'Russo One',sans-serif;
 }
 
 header {
@@ -64,7 +64,7 @@ a {
 }
 
 .container {
-    font-family: Fugaz One;
+    font-family: 'Fugaz One',sans-serif;
     padding: 5px 20px 15px 20px;
     border: 3px solid paleturquoise;
     border-radius: 10px;
