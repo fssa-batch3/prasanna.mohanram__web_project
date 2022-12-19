@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Russo One;
+    font-family: 'Russo One',sans-serif;
     background-image: url(../Images/Bike\ Background.gif);
     background-size: cover;
 }
