@@ -23,9 +23,29 @@
             <input id="remember" type="checkbox" name="checkbox">
             <label for="remember"> Remember me</label>
           </div>
-      <a href="../../index.html"> Log In </a>
+      <!-- <a href="../../index.html" onclick="submit"> Log In </a> -->
       <a id="new-acc" href="../../Pages/Account/signup.html"> Create a New Account</a>
+      <button class="btn" onclick="login()" type="button"> login </button>
      </form>
          </div>
+
+
+         <script>
+
+          function login(){
+
+          const username = document.getElementById("username").value
+          const password = document.getElementById("password").value
+
+           console.log("Name is " + username)
+           console.log("Password is " + password)
+
+           localStorage.setItem("Username", username)
+           localStorage.setItem("Userpassword", password)
+
+           window.location.href = "../../index.html"
+
+          }
+         </script>
      </body>
   </html>
