@@ -1,22 +1,15 @@
 {
   "name": "bikerz_zone",
   "version": "1.0.0",
-  "description": "About Website:",
   "main": "main.js",
   "scripts": {
-    "dev": "http-server ./"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fssa-batch3/prasanna.mohanram__web_project.git"
+    "url": "(https://github.com/fssa-batch3/prasanna.mohanram__web_project)"
   },
-  "author": "BrokenPRasanna",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fssa-batch3/prasanna.mohanram__web_project/issues"
-  },
-  "homepage": "https://github.com/fssa-batch3/prasanna.mohanram__web_project#readme",
-  "dependencies": {
-    "http-server": "^14.1.1"
-  }
+  "description": ""
 }

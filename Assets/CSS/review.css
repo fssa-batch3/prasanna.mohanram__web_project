@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Russo One',sans-serif;
+    font-family: Russo One;
     background: url(../Images/AbandonedWeightyBactrian-size_restricted.gif);
     background-size: cover;
 }
@@ -54,12 +54,12 @@ a {
 }
 
 .main {
-    margin: 50px 0px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 20px;
+    margin: 50px 0;
     margin-left: 10px;
 }
 

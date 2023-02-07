@@ -108,3 +108,28 @@ input[type=checkbox] {
   background: none;
   box-shadow: none;
 }
+
+#btn{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #3eff4b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 100px;
+  overflow:hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+}
+
+#btn:hover {
+  background: #3eff4b;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #3eff4b, 0 0 25px #3eff4b, 0 0 50px #3eff4b, 0 0 100px #3eff4b;
+  border: none;
+}

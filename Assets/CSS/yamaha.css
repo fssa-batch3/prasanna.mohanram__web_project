@@ -3,7 +3,7 @@ html{
 }
 body{
     margin: 0;
-    font-family: 'Russo One',sans-serif;
+    font-family: Russo One;
 }
 header{
     background-color:crimson;
@@ -108,6 +108,9 @@ hr{
 .buy{
     position: relative;
     color: greenyellow;
+}
+
+.buy {
     text-shadow: 0 0 10px black;
     border-radius: 10px;
     background:

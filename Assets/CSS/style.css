@@ -5,7 +5,7 @@ html {
 body {
     background-color: black;
     margin: 0;
-    font-family: 'Russo One'sans-serif;
+    font-family: Russo One;
 }
 
 header {
@@ -226,7 +226,7 @@ hr {
 }
 
 * {
-    font-family: 'Russo one',sans-serif;
+    font-family: "Russo one" sans-serif;
     letter-spacing: 0.2px;
 }
 

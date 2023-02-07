@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../../Assets/CSS/login.css">
-    <title>
-       Login page
-    </title>
-    <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
-  </head>
-      <body>
-          <div class="login">
-          <h2>Login</h2>
-      <form>
-          <div class="inputs">
-            <input id="username" type="text" name="Username" required>
-             <label for="username">Username</label>
-          </div>
-         <div class="inputs">
-             <input id="password" type="password" name="Password" required>
-             <label for="password">Password</label>
-          </div><br>
-          <div class="remember">
-            <input id="remember" type="checkbox" name="checkbox">
-            <label for="remember"> Remember me</label>
-          </div>
-      <!-- <a href="../../index.html" onclick="submit"> Log In </a> -->
+
+<head>
+  <link rel="stylesheet" href="../../Assets/CSS/login.css">
+  <title>
+    Login page
+  </title>
+  <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+</head>
+
+<body>
+  <div class="login">
+    <h2>Login</h2>
+    <form>
+      <div class="inputs">
+        <input id="username" type="text" name="Username" required>
+        <label for="username">Username</label>
+      </div>
+      <div class="inputs">
+        <input id="password" type="password" name="Password" required>
+        <label for="password">Password</label>
+      </div><br>
+      <div class="remember">
+        <input id="remember" type="checkbox" name="checkbox">
+        <label for="remember"> Remember me</label>
+      </div>
+      <button id="btn" onclick="login()"> Log In </button>
       <a id="new-acc" href="../../Pages/Account/signup.html"> Create a New Account</a>
-      <button class="btn" onclick="login()" type="button"> login </button>
-     </form>
-         </div>
+    </form>
+  </div>
+</body>
+<script>
 
+  function login() {
 
-         <script>
+    let user = {};
+    let user_List = [];
+    user["username"] = document.getElementById("username").value;
+    user["password"] = document.getElementById("password").value;
+    user_List.push(user);
+    // localStorage.setItem("user", JSON.stringify(user_List))
+    // localStorage.getItem("user_details")
+    let record = JSON.parse(localStorage.getItem("User List")) || [];
+    record.push(user);
+    localStorage.setItem("User List", JSON.stringify(record));
 
-          function login(){
+  }
 
-          const username = document.getElementById("username").value
-          const password = document.getElementById("password").value
+  const loginpage = document.getElementById("loginform");
 
-           console.log("Name is " + username)
-           console.log("Password is " + password)
+  loginpage.onsubmit = e => {
 
-           localStorage.setItem("Username", username)
-           localStorage.setItem("Userpassword", password)
+    e.preventDefault();
 
-           window.location.href = "../../index.html"
+    const emailInput = loginpage["email"].value;
+    const passwordInput = loginpage["password"].value;
+    let usersdata = JSON.parse(localStorage.getItem("users"));
 
-          }
-         </script>
-     </body>
-  </html>
+    if (!usersdata) {
+      alert("Login Failure");
+      return;
+    }
+
+    let Success;
+    for (let i = 0; i < usersdata.length; i++) {
+      if (usersdata[i].email === emailInput && usersdata[i].password === passwordInput) {
+        Success = true;
+        break;
+      }
+    }
+
+    if (Success) {
+      alert("Login Success");
+    } else {
+      alert("Login Failure");
+    }
+  } 
+</script>
+
+</html>

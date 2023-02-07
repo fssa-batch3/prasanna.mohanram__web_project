@@ -100,3 +100,29 @@ body {
   background: none;
   box-shadow: none;
 }
+
+#sign-up {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #28dfff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 100px;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  border: none;
+  background: none;
+}
+
+#sign-up:hover {
+  background: #28dfff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #28dfff, 0 0 25px #28dfff, 0 0 50px #28dfff, 0 0 100px #28dfff;
+  background-color: #28dfff;
+  border: none;
+}

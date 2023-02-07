@@ -7,7 +7,7 @@ body{
 }
 *{
     letter-spacing: 0.2px;
-    font-family: 'Russo one',sans-serif;
+    font-family: Russo one;
 }
 header{
     background-color:crimson;
