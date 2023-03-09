@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Russo One;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 174px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 400px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+.main-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.bike-img {
+    width: 400px;
+    height: 180px;
+    /* transform: translateX(-800px); */
+
+}
+
+
+.main-container img{
+    animation-name: move;
+    animation-duration: 15s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move {
+    0%{
+        transform: translate(-100px);
+    }
+    20%{
+        transform:translate(-200px);
+    }
+    30%{
+        transform:translate(-300px);
+    }
+    40%{
+        transform:translate(-400px);
+    }
+    50%{
+        transform:translate(-500px);
+    }
+    60%{
+        transform:translate(-600px);
+    }
+    70%{
+        transform: translate(-700px);
+    }
+    80%{
+        transform: translate(-800px);
+    }
+    90%{
+        transform: translate(-900px);
+    }
+    100%{
+        transform: translate(-1000px);
+    }
+
+
+    
+}
+
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+}

@@ -12,73 +12,91 @@
 <body>
    <div class="signup">
       <h2>Sign Up</h2>
-      <form>
+      <form action="login.html">
          <div class="inputs">
-            <input type="text" name="Fname" required id="firstname">
-            <label for="firstname">Firstname</label>
+            <input type="text" id="username" title="Name doesn't contain number or spaces" required="true">
+            <label for="username">Username</label>
          </div>
          <div class="inputs">
-            <input type="text" name="Lname" required id="lastname">
-            <label for="lastname">Lastname</label>
+            <input type="text" id="ph_no" pattern="[0-9]{10,10}" minlength="10" maxlength="10"
+               title="Phone Number doesn't contain letter or spaces and phone number must be 10 digit" required="true">
+            <label for="ph_no">Phone Number</label>
          </div>
          <div class="inputs">
-            <input type="text" name="Email" required id="email">
+            <input type="email" id="email" title="Email doesn't contain caps or spaces" required="true">
             <label for="email">Email</label>
          </div>
          <div class="inputs">
-            <input type="password" name="Password" required id="password">
+            <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               title="Password doesn't contain spaces" required="true">
             <label for="password">Password</label>
          </div>
          <div class="inputs">
-            <input type="password" name="CPassword" required id="conf-password">
+            <input type="password" id="conf-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               title="Confirm Password doesn't contain spaces" required="true">
             <label for="conf-password">Confirm Password</label>
          </div>
          <button id="sign-up" onclick="signup()"> Sign Up </button>
          <a id="alr-acc" href="../../Pages/Account/login.html"> Already Have a Account?</a>
+
       </form>
+
    </div>
-</body>
-
-<script>
 
 
+   <script>
 
-   function signup() {
 
-      const f_name = document.getElementById("firstname").value;
-      const l_name = document.getElementById("lastname").value;
-      const email_id = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const conf_password = document.getElementById("conf-password").value;
 
-      let user = {};
-      let user_List = [];
+      function signup() {
 
-      user["firstname"] = f_name;
-      user["lastname"] = l_name;
-      user["email"] = email_id;
-      user["password"] = password;
-      user["conf_password"] = conf_password;
+         let username = document.getElementById("username").value;
+         let phone = document.getElementById("ph_no").value;
+         let email_id = document.getElementById("email").value;
+         let password = document.getElementById("password").value;
+         let conf_password = document.getElementById("conf-password").value;
 
-      if (password == conf_password) {
-         alert("Password right");
-         let record = JSON.parse(localStorage.getItem("users_list")) || user_List;
-         record.push(user);
-         localStorage.setItem("users_list", JSON.stringify(record));
-      } else {
-         alert("Password Incorrect");
+         let user = {
+            "username": username,
+            "ph_no": phone,
+            "email": email_id,
+            "password": password,
+            "conf_password": conf_password
+
+         };
+         let array1;
+
+         if (JSON.parse(localStorage.getItem("user_signup_list"))) {
+
+            array1 = JSON.parse(localStorage.getItem("user_signup_list"))
+         }
+
+         else {
+            array1 = []
+         }
+
+
+         let j = 0;
+         for (let i = 0; i < array1.length; i++) {
+
+            if (array1[i]["email"] == email_id) {
+               j = 1;
+               break;
+            }
+         }
+
+         if (j == 1) {
+            alert("Email is already exist")
+         }
+         else {
+            array1.push(user);
+            localStorage.setItem("user_signup_list", JSON.stringify(array1))
+            alert("Ulla ponga bro")
+         }
+
       }
 
-
-
-
-   }
-
-
-
-
-
-</script>
-
+   </script>
+</body>
 
 </html>

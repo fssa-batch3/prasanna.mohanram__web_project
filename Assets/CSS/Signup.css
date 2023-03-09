@@ -64,6 +64,11 @@ body {
   opacity: 1;
 }
 
+.signup .inputs input:invalid~label {
+  width: 100%;
+  color: red;
+} 
+
 .signup form a {
   position: relative;
   display: inline-block;

@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Russo One;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 174px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 400px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+#main-img {
+    margin-top: 150px;
+    width: 700px;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/bike-background.jpg);
+    background-size: cover;
+}
+
+h2 {
+    font-size: 52px;
+    color: white;
+}
+
+#RB {
+    color: rgb(75, 189, 228);
+    font-size: 36px;
+}
+
+#description {
+    color: cornsilk;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #ffa299;
+    color: antiquewhite;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    font-family: Russo One;
+}
+
+.btn:hover {
+    box-shadow: 0 0.9em 0.9em -0.4em #ffa260;
+    transform: translateY(-0.25em);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 26px;
+    color: rgb(255, 251, 251);
+    text-shadow: 0px 0px 4px gold;
+}
+
+.specification {
+    font-size: 14px;
+    color: rgb(110, 184, 234);
+    text-shadow: 0px 0px 2px crimson;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    text-shadow: 0px 0px 1px goldenrod, 0px 0px 1px crimson, 0px 0px 1px rgb(0, 0, 0), 0px 0px 1px rgb(0, 255, 47);
+}
+
+#Rblue {
+    color: rgb(0, 136, 255);
+}
+
+#Dblack {
+    color: rgb(20, 20, 20);
+}
+
+#Mred {
+    color: crimson;
+}
+
+#Tgrey {
+    color: dimgrey;
+}
+
+.sug-img {
+    width: 200px;
+    height: 130px;
+}
+
+.rating {
+    width: 100px;
+    height: 20px;
+}
+
+h4 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bike-card {
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.bike-card:hover {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+    transition: .4s;
+    transform: scale(1.05);
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+}
+
+#bike-front {
+    width: 300px;
+    height: 450px;
+}
+
+.icon {
+    margin-top: 0px;
+    width: 60px;
+    height: 55px;
+}
+
+#transmission {
+    width: 60px;
+    height: 60px;
+}
+
+h5 {
+    color: #ff6a00;
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+}
+
+.content1 div {
+    text-align: start;
+    margin-left: 20px;
+}
+
+#vid {
+    margin: 100px 100px 100px 450px;
+}
+
+#vid-des {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+}
+
+.icons {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 106px;
+    margin-top: 35px;
+    text-shadow: none;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 10px white;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
