@@ -64,8 +64,8 @@ a {
 .main-container img{
     animation-name: move;
     animation-duration: 15s;
-    animation-delay: 1.5s;
-    animation-fill-mode: both;
+    /* animation-delay: 1.5s; */
+    /* animation-fill-mode: both; */
     animation-direction: reverse;
     animation-iteration-count: infinite;
 
@@ -73,6 +73,9 @@ a {
 @keyframes move {
     0%{
         transform: translate(-100px);
+    }
+    10%{
+        transform: translate(-150px);
     }
     20%{
         transform:translate(-200px);
