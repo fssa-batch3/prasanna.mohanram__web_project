@@ -22,49 +22,40 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 Features:
 
 
-Create an account: ( completed :white_check_mark: )
-Scenario 1: Successfully create an account Steps:
+### Create an account(completed :white_check_mark:)
+-Steps:
+ 1 .Navigate to the sign-in page.
+ 2. Fill the required information such as Name, email, and password.
+ 3. Click the "Create Account" button.
+ - Expected Result:
+  1.The user is redirected to the login page.
 
-Navigate to the registration page.
-Enter the required information such as username, phone_number, email, password and confirm_password.
-Click the "Signup" button. Expected Result:
-The user is redirected to the login page.
 
-Login account: ( completed :white_check_mark: )
-Scenario 1: Successfully login in to account Steps:
+### Create an account(completed :white_check_mark:)
+- Scenario 1: Successfully login in to account
+    - Steps:
+        1. Navigate to the login page.
+        2. Fill the required information such as email, and password.
+        3. Click the "login" button.
+    - Expected Result:
+        - The user is redirected to the user profile page.
 
-Navigate to the login page.
-Enter the required information such as email, and password.
-Click the "login" button. Expected Result:
-The user is redirected to the user profile page.
+### View account details: ( completed ✅ ) Scenario 1: Successfully view account details Steps:
 
-View account details: ( completed :white_check_mark: )
-Scenario 1: Successfully view account details Steps:
+- Log in as a user. Navigate to the profile page. 
+- View the account details such as name, email, and phone_number. 
+- Expected Result: The user can view their account details.
 
-Log in as a user.
-Navigate to the profile page.
-View the account details such as name, email, and phone_number. Expected Result:
-The user can view their account details.
+### Edit account details: ( completed ✅ ) Scenario 1: Successfully edit account details Steps:
 
-Edit account details: ( completed :white_check_mark: )
-Scenario 1: Successfully edit account details Steps:
+- Log in as a user. Navigate to the profile page. 
+- Click the "Edit Profile" button. 
+- Update the account details. 
+- Click the "Save Profile" button. 
+- Expected Result: The user's account details are updated.
 
-Log in as a user.
-Navigate to the profile page.
-Click the "Edit" button.
-Update the account details.
-Click the "Save" button. Expected Result:
-The user's account details are updated.
+### Delete account details: ( completed ✅ ) Scenario 1: Successfully delete account details Steps:
 
-Delete account details: ( completed :white_check_mark: )
-Scenario 1: Successfully delete account details Steps:
-
-Log in as a user.
-Navigate to the profile page.
-Click the "Delete" button.
-A alert will come.
-Click "Yes".
-The user's account details are deleted.
-The use is redirected to the login page.
->>>>>>> d1e83de1a35de1ac02a05a05f96cd4048addd28a
-
+- Navigate to the profile page. Click the "Delete" button. 
+- A alert will come. Click "Yes". The user's account details are deleted. 
+- The use is redirected to the "User_entry"page.
