@@ -158,6 +158,7 @@ hr {
     background-color: gray;
     border: 2px solid darkcyan;
     border-radius: 10px;
+    padding: 10px;
 
 }
 
@@ -173,3 +174,4 @@ h1{
     text-align: center;
     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px #ffdf3e, 0 0 50px #c5ff3e, 0 0 100px #ffcf3e;
 }
+
