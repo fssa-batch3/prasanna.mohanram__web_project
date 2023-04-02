@@ -33,9 +33,9 @@
 
    <div class="signup">
       <h2>Sign Up</h2>
-      <form action="login.html">
+      <form id="signup">
          <div class="inputs">
-            <input type="text" id="username" title="Name doesn't contain number or spaces" required="true">
+            <input type="text" id="username" pattern="[A-Za-z]+" title="Name doesn't contain number or spaces" required="true">
             <label for="username">Username</label>
          </div>
          <div class="inputs">
@@ -57,7 +57,7 @@
                title="Confirm Password doesn't contain spaces" required="true">
             <label for="conf-password">Confirm Password</label>
          </div>
-         <button id="sign-up" onclick="signup()"> Sign Up </button>
+         <button id="sign-up" > Sign Up </button>
          <a id="alr-acc" href="../../Pages/Account/login.html"> Already Have a Account?</a>
 
       </form>
@@ -66,9 +66,11 @@
 
 
    <script>
-
-
-
+      let signupform = document.getElementById("signup")
+      signupform.addEventListener("submit", e => {
+         e.preventDefault();
+         signup()
+      })
       function signup() {
 
          let username = document.getElementById("username").value;
@@ -112,7 +114,8 @@
          else {
             array1.push(user);
             localStorage.setItem("user_signup_list", JSON.stringify(array1))
-            alert("Ulla ponga bro")
+            alert("Successfully created account")
+            window.location.href = "login.html"
          }
 
       }

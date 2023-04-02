@@ -189,13 +189,17 @@
         localStorage.setItem("user_signup_list", JSON.stringify(users));
 
         console.log(users);
+
+        document.querySelectorAll("#username")[1].disabled = true;
+        document.getElementById("ph_no").disabled = true;
     })
 
     function deleteItem() {
         for (let i = 0; i < users.length; i++) {
             if (document.getElementById("email").value == users[i]["email"]) {
                 users.splice(i,1)
-                confirm("Vrooo.. Log out pannavaa?🥺")
+                // confirm("Vrooo.. Log out pannavaa?🥺")
+                confirm("Do you want to delete your account?")
                 localStorage.setItem("user_signup_list", JSON.stringify(users));
 
                 window.location.href = "login.html";
