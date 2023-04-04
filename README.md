@@ -26,22 +26,22 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
  1. Navigate to the signup page.
  2. Fill the required information such as username, phone_number, email, password and confirm password.
  3. Click the "Signup" button.
- - Expected Result:
-  1.The user is redirect to the login page.
+  - Expected Result:
+   1. The user is redirect to the login page.
 
 
 ## Log in account(completed :white_check_mark:)
 ### Scenario 1: Successfully login in to account
 - Steps:
-   1. Navigate to the login page.
-   2. Fill the required information such as email, and password.
-   3. Click the "login" button.
-   - Expected Result:
-    1.The user is redirect to the user profile page.
+ 1. Navigate to the login page.
+ 2. Fill the required information such as email, and password.
+ 3. Click the "login" button.
+ - Expected Result:
+  1. The user is redirect to the user profile page.
 
 ## View account details: ( completed ✅ ) 
 ### Scenario 1: Successfully view account details Steps:
-
+- Steps:
 1. Log in as a user. Navigate to the profile page. 
 2. View the account details such as name, email, and phone_number. 
 - Expected Result: 
@@ -49,7 +49,7 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 
 ## Edit account details: ( completed ✅ )
 ### Scenario 1: Successfully edit account details Steps:
-
+- Steps:
 1. Log in as a user. Navigate to the profile page. 
 2. Click the "Edit" button. 
 3. Update the account details. 
@@ -60,7 +60,7 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 
 ## Delete account details: ( completed ✅ ) 
 ### Scenario 1: Successfully delete account details Steps:
-
+- Steps:
 1. Navigate to the profile page. Click the "Delete" button. 
 2. A alert will come. Click "Yes". The user's account details will be deleted. 
 3. The user will redirect to the login page.
