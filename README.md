@@ -21,12 +21,13 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 
 
 ## Create an account(completed :white_check_mark:)
+### Scenario 1: Successfully created account
 - Steps:
- 1. Navigate to the sign-in page.
- 2. Fill the required information such as userame, phone_number, email, password and confirm password.
+ 1. Navigate to the signup page.
+ 2. Fill the required information such as username, phone_number, email, password and confirm password.
  3. Click the "Signup" button.
  - Expected Result:
-  1.The user is redirected to the login page.
+  1.The user is redirect to the login page.
 
 
 ## Log in account(completed :white_check_mark:)
@@ -36,27 +37,32 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
    2. Fill the required information such as email, and password.
    3. Click the "login" button.
    - Expected Result:
-    1.The user is redirected to the user profile page.
+    1.The user is redirect to the user profile page.
 
 ## View account details: ( completed ✅ ) 
 ### Scenario 1: Successfully view account details Steps:
 
-- Log in as a user. Navigate to the profile page. 
-- View the account details such as name, email, and phone_number. 
-- Expected Result: The user can view their account details.
+1. Log in as a user. Navigate to the profile page. 
+2. View the account details such as name, email, and phone_number. 
+- Expected Result: 
+1. The user can view their account details.
 
 ## Edit account details: ( completed ✅ )
 ### Scenario 1: Successfully edit account details Steps:
 
-- Log in as a user. Navigate to the profile page. 
-- Click the "Edit Profile" button. 
-- Update the account details. 
-- Click the "Save Profile" button. 
-- Expected Result: The user's account details are updated.
+1. Log in as a user. Navigate to the profile page. 
+2. Click the "Edit" button. 
+3. Update the account details. 
+4. Click the "Save" button.
+5. Refresh once.
+- Expected Result: 
+1. The user's account details are updated.
 
 ## Delete account details: ( completed ✅ ) 
 ### Scenario 1: Successfully delete account details Steps:
 
-- Navigate to the profile page. Click the "Delete" button. 
-- A alert will come. Click "Yes". The user's account details are deleted. 
-- The use is redirected to the "User_entry"page.
+1. Navigate to the profile page. Click the "Delete" button. 
+2. A alert will come. Click "Yes". The user's account details will be deleted. 
+3. The user will redirect to the login page.
+- Expected Result:
+1. The user will redirect to the login page.
