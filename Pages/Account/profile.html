@@ -15,27 +15,27 @@
 <body>
 
 
-    
-   
 
-  <!--Navigations-->
-  <header>
-    <div class="nav">
-        <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
-                alt="logo"></a>
- 
-        <div class="options">
-            <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
-            <a class="a1" href="../Sell Bike/sbike-details.html">Sell Bike</a>
-            <a class="a1" href="../review.html">Review of Bike</a>
-            <a class="a1" href="../Price List/price.html">Price List of Bike</a>
-            <a class="a1" href="../About/About.html">About</a>
-            <a class="a1" href="../Account/signup.html">Signup/login</a>
+
+
+    <!--Navigations-->
+    <header>
+        <div class="nav">
+            <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
+                    alt="logo"></a>
+
+            <div class="options">
+                <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-details.html">Sell Bike</a>
+                <a class="a1" href="../review.html">Review of Bike</a>
+                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
+                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../Account/signup.html">Signup/login</a>
+            </div>
         </div>
-    </div>
- </header>
- 
- 
+    </header>
+
+
 
     <!-- <div class="page-content page-container" id="page-content">
         <div class="padding">
@@ -134,7 +134,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <button class="m-b-10 f-w-600 logout" id="deleteButton" onclick="deleteItem()">Delete</button>
+                                    <button class="m-b-10 f-w-600 logout" id="deleteButton"
+                                        onclick="deleteItem()">Delete</button>
                                     <h6 class="text-muted f-w-400"></h6>
                                 </div>
                                 <button onclick="edit()">Edit</button>
@@ -197,12 +198,20 @@
     function deleteItem() {
         for (let i = 0; i < users.length; i++) {
             if (document.getElementById("email").value == users[i]["email"]) {
-                users.splice(i,1)
-                // confirm("Vrooo.. Log out pannavaa?🥺")
-                confirm("Do you want to delete your account?")
-                localStorage.setItem("user_signup_list", JSON.stringify(users));
 
-                window.location.href = "login.html";
+                // confirm("Vrooo.. Log out pannavaa?🥺")
+                let msg = confirm("Do you want to delete your account?")
+
+                if (msg != true) {
+                    return false;
+                } else {
+                    users.splice(i, 1)
+                    
+                    localStorage.setItem("user_signup_list", JSON.stringify(users));
+
+                    window.location.href = "login.html";
+                }
+
             }
         }
     }
