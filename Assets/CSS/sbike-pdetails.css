@@ -116,14 +116,14 @@ input:focus {
     transition: 1s;
 }
 
-#complete {
+#continue {
     margin-left: 200px;
     background-color: gray;
     border: 2px solid darkcyan;
     border-radius: 10px;
 }
 
-#complete:hover {
+#continue:hover {
     border: none;
     background-color: greenyellow;
     color: rgb(0, 0, 0);

@@ -22,7 +22,7 @@
 
                         <div class="options">
                                 <a class="a1" href="../../Pages/Buy Bike/newold.html">Buy Bike</a>
-                                <a class="a1" href="../../Pages/Sell Bike/sbike-details.html">Sell Bike</a>
+                                <a class="a1" href="../../Pages/Sell Bike/sbike-pdetails.html">Sell Bike</a>
                                 <a class="a1" href="../../Pages/review.html">Review of Bike</a>
                                 <a class="a1" href="../../Pages/Price List/price.html">Price List of Bike</a>
                                 <a class="a1" href="../../Pages/About/About.html">About</a>
@@ -37,7 +37,7 @@
 
 
 
-        <form>
+        <form id="bike_details">
                 <h1>Bike Details</h1>
                 <fieldset>
                         <legend></legend>
@@ -51,18 +51,18 @@
                                         placeholder="Ex: Chennai" required /></label>
                         <label for="Other Details">Other Details :
                                 <textarea id="other-details" name="other-details" rows="3" cols="30"
-                                        placeholder="Ex: Milage, Km Driven,..."></textarea>
+                                        placeholder="Ex: Yamaha RX100 is powered by 98 cc engine.This RX100 engine generates a power of 11 PS @ 7500 rpm and a torque of 10.39 Nm @ 6500 rpm. Yamaha RX100 gets Drum brakes in the front and rear. Yamaha RX100 has Tube Tyre."></textarea>
                         </label>
                 </fieldset>
                 <fieldset>
-                        <label for="bike-picture">Upload Your Bike Picture: <input id="bike-picture" type="file"
-                                        name="file" /></label>
-                        <label for="bike-picture">Upload Your Bike Picture: <input id="bike-picture" type="file"
-                                        name="file" /></label>
-                        <label for="bike-picture">Upload Your Bike Picture: <input id="bike-picture" type="file"
-                                        name="file" /></label>
+                        <label for="bike-picture">Upload Your Bike Picture 1: <input id="bike-picture" type="url"
+                                        name="url" /></label>
+                        <label for="bike-picture">Upload Your Bike Picture 2: <input id="bike-picture" type="url"
+                                        name="url" /></label>
+                        <label for="bike-picture">Upload Your Bike Picture 3: <input id="bike-picture" type="url"
+                                        name="url" /></label>
                 </fieldset>
-                <button id="continue" onclick="Continue()"> Continue </button>
+                <button id="Complete" type="submit">Complete</button>
         </form>
 
 
@@ -93,38 +93,42 @@
 
 </body>
 <script>
+         let arr = JSON.parse(localStorage.getItem("Product_details")) ?? [];
 
-        function Continue() {
+        let bike_details = document.getElementById("bike_details");
+
+        bike_details.addEventListener("submit", e=> {
+
+                e.preventDefault();
 
                 let model = document.getElementById("Bike-model").value;
                 let price = document.getElementById("Bike-price").value;
                 let ownership = document.getElementById("Ownership").value;
                 let location = document.getElementById("Location").value;
                 let others = document.getElementById("other-details").value;
+                let image1 = document.querySelectorAll("#bike-picture")[0].value;
+                let image2 = document.querySelectorAll("#bike-picture")[1].value;
+                let image3 = document.querySelectorAll("#bike-picture")[2].value;
 
                 let bike = {
                         "Bike-model": model,
                         "Bike-price": price,
                         "ownership": ownership,
                         "location": location,
-                        "other-details": others
+                        "other-details": others,
+                        "bike-picture1": image1,
+                        "bike-picture2": image2,
+                        "bike-picture3": image3
                 };
 
-                let arr;
-
-                if (JSON.parse(localStorage.getItem("Product_details"))) {
-
-                        arr = JSON.parse(localStorage.getItem("Product_details"))
-                }
-
-                else {
-                        arr = []
-                }
+        
 
                 arr.push(bike);
+
                 localStorage.setItem("Product_details", JSON.stringify(arr));
 
-        }
+        })
+
 </script>
 
 </html>

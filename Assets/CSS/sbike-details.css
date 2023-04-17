@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Russo One;
-    background: linear-gradient(rgba(255, 194, 71, 0.6),rgba(255, 224, 237, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 200, 0, 0.5)), url(../Images/istockphoto-1175608834-612x612.jpg);
+    background: linear-gradient(rgba(255, 194, 71, 0.6), rgba(255, 224, 237, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 200, 0, 0.5)), url(../Images/istockphoto-1175608834-612x612.jpg);
     background-size: cover;
 }
 
@@ -102,11 +102,12 @@ input[type="file"] {
     padding: 1px 2px;
 }
 
-input{
+input {
     font-weight: bold;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     background-color: lightpink;
     transition: 1s;
 }
@@ -153,7 +154,7 @@ hr {
     border-bottom: 1px solid black;
 }
 
-#continue{
+#complete {
     margin-left: 200px;
     background-color: gray;
     border: 2px solid darkcyan;
@@ -162,7 +163,7 @@ hr {
 
 }
 
-#continue:hover{
+#complete:hover {
     border: none;
     background-color: greenyellow;
     color: rgb(0, 0, 0);
@@ -170,8 +171,7 @@ hr {
     box-shadow: 0 0 10px 6px greenyellow;
 }
 
-h1{
+h1 {
     text-align: center;
     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px #ffdf3e, 0 0 50px #c5ff3e, 0 0 100px #ffcf3e;
 }
-

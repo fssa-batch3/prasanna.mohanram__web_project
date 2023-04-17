@@ -35,7 +35,7 @@
     <!-- main -->
 
 
-    <form>
+    <form id="seller_form">
         <h1>Seller Personal Details</h1>
         <fieldset>
             <label for="name">Enter Your Name : <input id="name" name="name" type="text" required /></label>
@@ -49,9 +49,9 @@
         <fieldset>
             <h3>Is there is any Damages in Your Bike?</h3>
             <div class="damages">
-                <label for="yes"><input id="yes" type="radio" name="bike-damage" class="yes-or-no" />
+                <label for="yes"><input id="yes" type="radio" name="bike-damage" class="yes-or-no" value="yes" />
                     Yes</label>
-                <label for="no"><input id="no" type="radio" name="bike-damage" class="yes-or-no" />
+                <label for="no"><input id="no" type="radio" name="bike-damage" class="yes-or-no" value="no" />
                     No</label>
             </div>
             <label for="terms-and-conditions" name="terms-and-conditions">
@@ -61,7 +61,7 @@
             </label>
         </fieldset>
 
-        <a id="complete" href="../../index.html"> Complete </a>
+        <button id="continue" type="submit"> Continue </button>
     </form>
 
 
@@ -94,5 +94,41 @@
 
 
 </body>
+
+<script>
+
+    let seller_form = document.getElementById("seller_form");
+
+    let ar = JSON.parse(localStorage.getItem("Seller_details")) ?? [];
+
+    seller_form.addEventListener("submit", e => {
+
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("mobile-number").value;
+        let email = document.getElementById("email").value;
+        let insurance = document.getElementById("insurance").value;
+        let FC = document.getElementById("fc").value;
+        let damage = document.querySelector('input[name="bike-damage"]:checked').value ?? "";
+
+        let seller = {
+            "name": name,
+            "mobile-number": phone,
+            "email": email,
+            "insurance": insurance,
+            "fc": FC,
+            "Is bike is damaged?": damage
+        };
+
+        ar.push(seller);
+
+        localStorage.setItem("Seller_details", JSON.stringify(ar));
+
+        window.location.href = "sbike-details.html";
+
+    });
+
+</script>
 
 </html>
