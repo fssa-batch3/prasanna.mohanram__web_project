@@ -264,44 +264,75 @@
         }
     ]
 
-let productbikes=JSON.parse(localStorage.getItem("Product_details"))
-console.log(productbikes);
+    let productbikes = JSON.parse(localStorage.getItem("Product_details"))
+    console.log(productbikes);
+
+
+    const url = window.location.search;
+        const urlparams = new URLSearchParams(url);
+        const resultsearch = urlparams.get("name");
+        console.log(resultsearch);
+    
+        // let showedItem;
+
+        // productbikes.find((item) => {
+        //     if (resultsearch == item["product_id"]) {
+        //         return showedItem = item;
+        //     }
+        //     else {
+        //         return showedItem = 0;
+        //     }
+        // });
+
+        // console.log(showedItem);
 
 
 
     for (let i = 0; i < productbikes.length; i++) {
 
-        let div_bike_card = document.createElement("div")
-        div_bike_card.setAttribute("class", "bike-card")
-        document.querySelector(".row").prepend(div_bike_card)
+        let product = productbikes[i].Bike_brand;
+        if (productbikes[i]["status"] == true && product == resultsearch) {
+            let anchortag = document.createElement("a");
+            anchortag.setAttribute("class", "card")
+            anchortag.setAttribute("href", "../../Pages/Buy Bike/bikeview.html?prod_id=" + productbikes[i]["product_id"])// "../../?"+= 
+            document.querySelector(".row").prepend(anchortag)
+
+            let div_bike_card = document.createElement("div")
+            div_bike_card.setAttribute("class", "bike-card");
+            anchortag.append(div_bike_card)
+            // document.querySelector(".row").prepend(div_bike_card)
 
 
-        let yamaha_img = document.createElement("img")
-        yamaha_img.setAttribute("class", "yamaha-img")
-        yamaha_img.setAttribute("src", productbikes[i]["bike-picture1"])
-        div_bike_card.prepend(yamaha_img)
+            let yamaha_img = document.createElement("img")
+            yamaha_img.setAttribute("class", "yamaha-img")
+            yamaha_img.setAttribute("src", productbikes[i]["bike-picture1"])
+            div_bike_card.prepend(yamaha_img)
 
-        let h5_title = document.createElement("h5")
-        h5_title.innerText = productbikes[i]["Bike-model"];
-        div_bike_card.append(h5_title)
-
-
-        let p_description = document.createElement("p")
-        p_description.setAttribute("class", "description")
-        p_description.innerText = productbikes[i]["other-details"];
-        div_bike_card.append(p_description)
-
-        let p_learnmore = document.createElement("p")
-        p_learnmore.setAttribute("class", "learnmore")
-        p_learnmore.innerText = "LEARN MORE";
-        div_bike_card.append(p_learnmore)
+            let h5_title = document.createElement("h5")
+            h5_title.innerText = productbikes[i]["Bike_brand"];
+            div_bike_card.append(h5_title)
 
 
-        let span_arrow = document.createElement("span")
-        span_arrow.setAttribute("id", "arrow")
-        span_arrow.setAttribute("class", "material-symbols-outlined")
-        span_arrow.innerText = "arrow_circle_right";
-        div_bike_card.append(span_arrow)
+            let p_description = document.createElement("p")
+            p_description.setAttribute("class", "description")
+            p_description.innerText = productbikes[i]["other-details"];
+            div_bike_card.append(p_description)
+
+            let p_learnmore = document.createElement("p")
+            p_learnmore.setAttribute("class", "learnmore")
+            p_learnmore.innerText = "LEARN MORE";
+            div_bike_card.append(p_learnmore)
+
+
+            let span_arrow = document.createElement("span")
+            span_arrow.setAttribute("id", "arrow")
+            span_arrow.setAttribute("class", "material-symbols-outlined")
+            span_arrow.innerText = "arrow_circle_right";
+            div_bike_card.append(span_arrow);
+
+
+        }
+
 
     }
 

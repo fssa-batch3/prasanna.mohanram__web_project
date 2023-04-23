@@ -42,7 +42,7 @@
 
         <div class="brand-column">
             <div class="row">
-                <a class="brand-card" href="../../Pages/Buy Bike/smodel.html">
+                <!-- <a class="brand-card" href="../../Pages/Buy Bike/smodel.html">
                     <div class="content">
                         <img class="brand-logo" src="../../Assets/Images/yamaha-logo-removebg-preview.png"
                             alt="Yamaha Logo">
@@ -96,10 +96,99 @@
                         <img class="brand-logo" src="../../Assets/Images/ktm-logo-removebg-preview.png" alt="KTM Logo">
                         <h6 class="center">KTM</h6>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </main>
+
+
+
+
+    <script>
+
+
+
+        let brands = [
+            {
+                name: "Yamaha",
+                logo: "../../Assets/Images/yamaha-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Hero",
+                logo: "../../Assets/Images/hero-logo.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Suzuki",
+                logo: "../../Assets/Images/suzuki-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "TVS",
+                logo: "../../Assets/Images/tvs-logo.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Royal Enfield",
+                logo: "../../Assets/Images/royalenfield-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Honda",
+                logo: "../../Assets/Images/honda-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Bajaj",
+                logo: "../../Assets/Images/bajaj-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "KTM",
+                logo: "../../Assets/Images/ktm-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            }
+        ]
+
+
+
+        for (let i = 0; i < 8; i++) {
+
+            // create anchor element
+            var a = document.createElement("a");
+            a.classList.add("brand-card");
+            a.href = "../../Pages/Buy Bike/smodel.html?name=" + brands[i].name ;
+
+            // create div element
+            var div = document.createElement("div");
+            div.classList.add("content");
+
+            // create img element
+            var img = document.createElement("img");
+            img.classList.add("brand-logo");
+            img.src = brands[i]["logo"];
+            img.alt = "Yamaha Logo";
+
+            // create h6 element
+            var h6 = document.createElement("h6");
+            h6.classList.add("center");
+            h6.textContent = brands[i]["name"];
+
+            // append img and h6 to div
+            div.appendChild(img);
+            div.appendChild(h6);
+
+            // append div to anchor
+            a.appendChild(div);
+            document.querySelector(".row").append(a);
+
+        }
+
+
+    </script>
+
+
 </body>
 
 </html>

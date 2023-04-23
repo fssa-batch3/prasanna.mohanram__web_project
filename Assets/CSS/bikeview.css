@@ -50,6 +50,7 @@ a {
 #main-img {
     margin-top: 150px;
     width: 700px;
+    padding: 25px;
 }
 
 .container-main {
@@ -73,7 +74,7 @@ h2 {
     color: cornsilk;
 }
 
-.btn {
+.btn, .ebtn {
     background: none;
     border: 2px solid #ffa299;
     color: antiquewhite;
@@ -83,7 +84,7 @@ h2 {
     font-family: Russo One;
 }
 
-.btn:hover {
+.btn:hover, .ebtn:hover {
     box-shadow: 0 0.9em 0.9em -0.4em #ffa260;
     transform: translateY(-0.25em);
 }
@@ -171,7 +172,7 @@ p {
 
 .feature {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #bike-front {
@@ -185,9 +186,20 @@ p {
     height: 55px;
 }
 
+.inside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
 #transmission {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 h5 {
@@ -256,4 +268,16 @@ footer {
 hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
+}
+
+.div-main-left:nth-child(3) img {
+    scale: 1.6;
+}
+
+.div-main-right:nth-child(1) img {
+    margin-left: -15px;
+}
+
+.div-main-right:nth-child(3) img {
+    margin-left: -15px;
 }
