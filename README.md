@@ -21,7 +21,7 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 
 
 ## Create an account(completed :white_check_mark:)
-### Scenario 1: Successfully created account
+### Scenario 1: Successfully created account Steps:
 - Steps:
  1. Navigate to the signup page.
  2. Fill the required information such as username, phone_number, email, password and confirm password.
@@ -31,7 +31,7 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 
 
 ## Log in account(completed :white_check_mark:)
-### Scenario 1: Successfully login in to account
+### Scenario 1: Successfully login in to account Steps:
 - Steps:
  1. Navigate to the login page.
  2. Fill the required information such as email, and password.
@@ -66,3 +66,16 @@ Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire
 3. The user will redirect to the login page.
 - Expected Result:
 1. The user will redirect to the login page.
+
+## Create product(completed :white_check_mark:)
+### Scenario 1: Successfully created product Steps:
+- Steps:
+ 1. Navigate to the sell bike page.
+ 2. Fill the required information such as name, mobile_number, email, insurance and FC.
+ 3. If your bike got damage choose "Yes" or If your bike doesn't got damage choose "No".
+ 4. Click the "Continue" button.
+ 5. The user is redirect to the seller bike detail page.
+ 6. Fill the required information such as bike_brand, bike_price, ownership, location, other_details and your bike's three image url.
+ 7. Click the "Complete" button.
+  - Expected Result:
+   1. The user is redirect to the home page.
