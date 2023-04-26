@@ -24,7 +24,9 @@ header {
 
 .options {
   width: 100%;
-  margin-left: 450px;
+  margin-left: 325px;
+  display: flex;
+  align-items: center;
 }
 
 #logo {
@@ -109,7 +111,7 @@ a {
 .signup .inputs input:invalid~label {
   width: 100%;
   color: red;
-} 
+}
 
 .signup form a {
   position: relative;
@@ -133,7 +135,7 @@ a {
   box-shadow: 0 0 5px #28dfff, 0 0 25px #28dfff, 0 0 50px #28dfff, 0 0 100px #28dfff;
 }
 
-#alr-acc{
+#alr-acc {
   letter-spacing: 0;
   text-align: center;
   color: dimgray;
@@ -142,7 +144,7 @@ a {
   margin-bottom: 0;
 }
 
-#alr-acc:hover{
+#alr-acc:hover {
   color: lightgray;
   background: none;
   box-shadow: none;

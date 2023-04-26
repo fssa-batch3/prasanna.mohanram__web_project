@@ -368,26 +368,26 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
     transform: translate3d(0, 2px, 0);
-  }
-  
-  .btn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
+}
 
-  #main-div {
+.btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+#main-div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
-  }
+}
 
-  #profile {
+#profile {
     background-color: white;
     border-radius: 50%;
 }

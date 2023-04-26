@@ -24,8 +24,11 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 650px;
+    /* margin-left: 650px; */
     margin-top: -200px;
+    margin-left: 600px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
