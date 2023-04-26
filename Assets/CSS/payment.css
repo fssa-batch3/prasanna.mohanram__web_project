@@ -173,3 +173,8 @@ label{
   transform: translateY(-0.25em);
   color: gold;
 }
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

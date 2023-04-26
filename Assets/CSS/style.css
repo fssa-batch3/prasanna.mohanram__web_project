@@ -250,3 +250,8 @@ hr {
     position: relative;
     bottom: 10px;
 }
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

@@ -22,7 +22,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -31,7 +33,7 @@ header {
 }
 
 #logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 a {
@@ -174,4 +176,25 @@ hr {
 h1 {
     text-align: center;
     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px #ffdf3e, 0 0 50px #c5ff3e, 0 0 100px #ffcf3e;
+}
+
+/* .notification {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+} */
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

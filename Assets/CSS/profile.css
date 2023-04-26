@@ -216,3 +216,7 @@ input {
     text-decoration: underline #919aa375;
 }
 
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

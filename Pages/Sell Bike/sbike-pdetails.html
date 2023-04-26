@@ -27,6 +27,9 @@
                 <a class="a1" href="../../Pages/Price List/price.html">Price List of Bike</a>
                 <a class="a1" href="../../Pages/About/About.html">About</a>
                 <a class="a1" href="../../Pages/Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -38,12 +41,24 @@
     <form id="seller_form">
         <h1>Seller Personal Details</h1>
         <fieldset>
-            <label for="name">Enter Your Name : <input id="name" name="name" type="text" required /></label>
+
+            <label for="name">Enter Your Name : <input id="name" name="name" type="text" placeholder="Ex: Prasanna"
+                    title="Name doesn't contain number or spaces" required /></label>
+
             <label for="mobile-number">Enter Your Mobile Number : <input id="mobile-number" name="mobile-number"
-                    type="number" required /></label>
-            <label for="email">Enter Your Email : <input id="email" name="email" type="email" required /></label>
-            <label for="insurance">Insurance : <input id="insurance" name="insurance" type="text" required /></label>
-            <label for="fc">FC : <input id="fc" name="fc" type="text" required /></label>
+                    type="number" pattern="[0-9]{10,10}" minlength="10" maxlength="10"
+                    title="Phone Number doesn't contain letter or spaces and phone number must be 10 digit"
+                    placeholder="Ex: 9876543210" required /></label>
+
+            <label for="email">Enter Your Email : <input id="email" name="email" type="email"
+                    title="Email doesn't contain caps or spaces" placeholder="Ex: example@gmail.com" required /></label>
+
+            <label for="insurance">Insurance : <input id="insurance" name="insurance" type="text"
+                    placeholder="Ex: QQ123456C" required /></label>
+
+            <label for="fc">FC : <input id="fc" name="fc" type="text" placeholder="Ex: Renewed or Not Renewed"
+                    required /></label>
+
         </fieldset>
 
         <fieldset>

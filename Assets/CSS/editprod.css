@@ -386,3 +386,8 @@
     align-items: flex-end;
     flex-wrap: wrap;
   }
+
+  #profile {
+    background-color: white;
+    border-radius: 50%;
+}

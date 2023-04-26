@@ -191,3 +191,8 @@ input[type=checkbox] {
   box-shadow: 0 0 5px #3eff4b, 0 0 25px #3eff4b, 0 0 50px #3eff4b, 0 0 100px #3eff4b;
   border: none;
 }
+
+#profile {
+  background-color: white;
+  border-radius: 50%;
+}

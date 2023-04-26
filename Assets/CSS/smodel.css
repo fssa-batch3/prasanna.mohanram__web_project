@@ -163,3 +163,7 @@ hr {
     border-bottom: 1px solid black;
 }
 
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

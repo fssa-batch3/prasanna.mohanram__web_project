@@ -93,7 +93,7 @@ input {
     border: none;
     border-bottom: 3px solid rgb(126, 185, 175);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* label{
@@ -177,4 +177,9 @@ footer {
 hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

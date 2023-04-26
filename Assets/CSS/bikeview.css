@@ -281,3 +281,8 @@ hr {
 .div-main-right:nth-child(3) img {
     margin-left: -15px;
 }
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

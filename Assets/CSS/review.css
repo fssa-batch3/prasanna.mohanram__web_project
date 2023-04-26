@@ -5,8 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Russo One;
-    background: url(../Images/AbandonedWeightyBactrian-size_restricted.gif);
-    background-size: cover;
+    background-color: aliceblue;
 }
 
 header {
@@ -140,4 +139,9 @@ footer {
 hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

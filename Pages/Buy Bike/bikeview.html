@@ -27,6 +27,9 @@
                 <a class="a1" href="../Price List/price.html">Price List of Bike</a>
                 <a class="a1" href="../About/About.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -209,7 +212,7 @@
         const urlparams = new URLSearchParams(url);
         const resultsearch = urlparams.get("prod_id");
 
-    
+
         let showedItem;
         let productbikes = JSON.parse(localStorage.getItem("Product_details"));
 
@@ -307,14 +310,14 @@
         const variantsHeading = document.createElement('h1');
         variantsHeading.textContent = 'Varients of ';
         const variantsLineBreak = document.createElement('br');
-        const variantsText = document.createTextNode(showedItem["Bike-brand"]);
+        const variantsText = document.createTextNode(showedItem["Bike_brand"]);
         variantsHeading.appendChild(variantsLineBreak);
         variantsHeading.appendChild(variantsText);
 
 
 
         const variantColors = document.createElement('h6');
-        variantColors.textContent = showedItem["Bike-brand"] + ' is available in 4 colour options:';
+        variantColors.textContent = showedItem["Bike_brand"] + ' is available in 4 colour options:';
         const racingBlue = document.createElement('span');
         racingBlue.id = 'Rblue';
         racingBlue.textContent = 'Racing Blue,';
@@ -416,7 +419,7 @@
         });
 
         const h1_feature = document.createElement('h1');
-        h1_feature.innerText = "Feature"
+        h1_feature.innerText = "Feature of " + showedItem["Bike_brand"];
         document.querySelector("main").appendChild(h1_feature);
 
 
@@ -552,7 +555,7 @@
 
         let vid_name = document.getElementById("vid-des");
         vid_name.innerHTML = " In this video " + showedItem["Bike-model"] + " " + showedItem["Bike-color"] + " Full Walkaround & First Look ";
-        
+
 
 
     </script>

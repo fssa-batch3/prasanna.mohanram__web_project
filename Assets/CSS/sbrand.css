@@ -100,3 +100,8 @@ h6 {
     background-color: rgb(250, 250, 250);
     transition: .6s;
 }
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

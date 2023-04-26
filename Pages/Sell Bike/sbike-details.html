@@ -27,6 +27,9 @@
                                 <a class="a1" href="../../Pages/Price List/price.html">Price List of Bike</a>
                                 <a class="a1" href="../../Pages/About/About.html">About</a>
                                 <a class="a1" href="../../Pages/Account/signup.html">Signup/login</a>
+                                <a href="../../Pages/Account/profile.html"><img id="profile"
+                                                src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                                                alt="profile_nav_img"></a>
                         </div>
                 </div>
         </header>
@@ -70,47 +73,47 @@
                                         <option value="KTM">KTM</option>
                                 </select> </label>
                         <label for="Bike-price">Enter Your Bike's Price : <input id="Bike-price" name="Bike-price"
-                                        type="text" placeholder="EX: 1,00,000" required /></label>
+                                        type="number" pattern="[0-9]{5,6}" placeholder="EX: 100000" required /></label>
                         <label for="ownership">Ownership : <select name="Ownership" id="Ownership">
-                                <option value="First">First</option>
-                                <option value="Second">Second</option>
-                                <option value="Third">Third</option>
-                        </select> </label>
+                                        <option value="First">First</option>
+                                        <option value="Second">Second</option>
+                                        <option value="Third">Third</option>
+                                </select> </label>
                         <label for="Location">Enter Your Location : <select name="cities" id="Location">
-                                <option value="Ariyalur">Ariyalur</option>
-                                <option value="Chennai">Chennai</option>
-                                <option value="Coimbatore">Coimbatore</option>
-                                <option value="Cuddalore">Cuddalore</option>
-                                <option value="Dharmapuri">Dharmapuri</option>
-                                <option value="Dindigul">Dindigul</option>
-                                <option value="Erode">Erode</option>
-                                <option value="Kanchipuram">Kanchipuram</option>
-                                <option value="Kanyakumari">Kanyakumari</option>
-                                <option value="Karur">Karur</option>
-                                <option value="Krishnagiri">Krishnagiri</option>
-                                <option value="Madurai">Madurai</option>
-                                <option value="Nagapattinam">Nagapattinam</option>
-                                <option value="Namakkal">Namakkal</option>
-                                <option value="Nilgiris">Nilgiris</option>
-                                <option value="Perambalur">Perambalur</option>
-                                <option value="Pudukkottai">Pudukkottai</option>
-                                <option value="Ramanathapuram">Ramanathapuram</option>
-                                <option value="Salem">Salem</option>
-                                <option value="Sivaganga">Sivaganga</option>
-                                <option value="Thanjavur">Thanjavur</option>
-                                <option value="Theni">Theni</option>
-                                <option value="Thoothukudi">Thoothukudi</option>
-                                <option value="Tiruchirappalli">Tiruchirappalli</option>
-                                <option value="Tirunelveli">Tirunelveli</option>
-                                <option value="Tiruppur">Tiruppur</option>
-                                <option value="Tiruvallur">Tiruvallur</option>
-                                <option value="Tiruvannamalai">Tiruvannamalai</option>
-                                <option value="Tiruvarur">Tiruvarur</option>
-                                <option value="Vellore">Vellore</option>
-                                <option value="Viluppuram">Viluppuram</option>
-                                <option value="Virudhunagar">Virudhunagar</option>
-                              </select>
-                              </label>
+                                        <option value="Ariyalur">Ariyalur</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Coimbatore">Coimbatore</option>
+                                        <option value="Cuddalore">Cuddalore</option>
+                                        <option value="Dharmapuri">Dharmapuri</option>
+                                        <option value="Dindigul">Dindigul</option>
+                                        <option value="Erode">Erode</option>
+                                        <option value="Kanchipuram">Kanchipuram</option>
+                                        <option value="Kanyakumari">Kanyakumari</option>
+                                        <option value="Karur">Karur</option>
+                                        <option value="Krishnagiri">Krishnagiri</option>
+                                        <option value="Madurai">Madurai</option>
+                                        <option value="Nagapattinam">Nagapattinam</option>
+                                        <option value="Namakkal">Namakkal</option>
+                                        <option value="Nilgiris">Nilgiris</option>
+                                        <option value="Perambalur">Perambalur</option>
+                                        <option value="Pudukkottai">Pudukkottai</option>
+                                        <option value="Ramanathapuram">Ramanathapuram</option>
+                                        <option value="Salem">Salem</option>
+                                        <option value="Sivaganga">Sivaganga</option>
+                                        <option value="Thanjavur">Thanjavur</option>
+                                        <option value="Theni">Theni</option>
+                                        <option value="Thoothukudi">Thoothukudi</option>
+                                        <option value="Tiruchirappalli">Tiruchirappalli</option>
+                                        <option value="Tirunelveli">Tirunelveli</option>
+                                        <option value="Tiruppur">Tiruppur</option>
+                                        <option value="Tiruvallur">Tiruvallur</option>
+                                        <option value="Tiruvannamalai">Tiruvannamalai</option>
+                                        <option value="Tiruvarur">Tiruvarur</option>
+                                        <option value="Vellore">Vellore</option>
+                                        <option value="Viluppuram">Viluppuram</option>
+                                        <option value="Virudhunagar">Virudhunagar</option>
+                                </select>
+                        </label>
                         <label for="Other Details">Other Details :
                                 <textarea id="other-details" name="other-details" rows="3" cols="30"
                                         placeholder="Ex: Yamaha RX100 is powered by 98 cc engine.This RX100 engine generates a power of 11 PS @ 7500 rpm and a torque of 10.39 Nm @ 6500 rpm. Yamaha RX100 gets Drum brakes in the front and rear. Yamaha RX100 has Tube Tyre."></textarea>
@@ -127,6 +130,7 @@
                 <button id="Complete" type="submit">Complete</button>
         </form>
 
+        <!-- <div id="notification" class="notification">Product created successfully!</div> -->
 
 
         <!-- Footer -->
@@ -161,7 +165,7 @@
 
         bike_details.addEventListener("submit", e => {
 
-                // e.preventDefault();
+
 
                 let brand = document.getElementById("Bike-brand").value;
                 let price = document.getElementById("Bike-price").value;
@@ -191,9 +195,18 @@
                 arr.push(bike);
 
                 localStorage.setItem("Product_details", JSON.stringify(arr));
-                location.reload();
+
+                window.location.href = "../../index.html";
+
+
+                // const notification = document.getElementById('notification');
+                // notification.classList.add('show');
+                // setTimeout(() => notification.classList.remove('show'), 5000);
 
         })
+
+
+
 
 </script>
 
