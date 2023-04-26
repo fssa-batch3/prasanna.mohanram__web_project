@@ -1,24 +1,12 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order History</title>
-</head>
-<body>
-    
-</body>
-</html> -->
 
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Product Created Notification</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style>
       .notification {
         position: fixed;
         top: 0;
@@ -34,13 +22,19 @@
         opacity: 1;
       }
     </style>
-  </head>
-  <body>
-    <div id="notification" class="notification">Product created successfully!</div>
+
+</head>
+<body>
+
+<div id="notification" class="notification">Product created successfully!</div>
     <script>
       const notification = document.getElementById('notification');
       notification.classList.add('show');
       setTimeout(() => notification.classList.remove('show'), 5000);
     </script>
-  </body>
+    
+</body>
 </html>
+
+
+
