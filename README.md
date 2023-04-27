@@ -20,7 +20,7 @@ Wireframe: https://drive.google.com/file/d/1BRb_XNANPdTZ8FDO6_OjsfmLdir-VHJR/vie
 # Features:
 
 
-## Create an account(completed :white_check_mark:)
+## Create an account( completed :white_check_mark: )
 ### Scenario 1: Successfully created account Steps:
 - Steps:
  1. Navigate to the signup page.
@@ -30,7 +30,7 @@ Wireframe: https://drive.google.com/file/d/1BRb_XNANPdTZ8FDO6_OjsfmLdir-VHJR/vie
    1. The user is redirect to the login page.
 
 
-## Log in account(completed :white_check_mark:)
+## Log in account( completed :white_check_mark: )
 ### Scenario 1: Successfully login in to account Steps:
 - Steps:
  1. Navigate to the login page.
@@ -67,7 +67,7 @@ Wireframe: https://drive.google.com/file/d/1BRb_XNANPdTZ8FDO6_OjsfmLdir-VHJR/vie
 - Expected Result:
 1. The user will redirect to the login page.
 
-## Create product(completed :white_check_mark:)
+## Create product( completed :white_check_mark: )
 ### Scenario 1: Successfully created product Steps:
 - Steps:
  1. Navigate to the sell bike page.
@@ -79,3 +79,37 @@ Wireframe: https://drive.google.com/file/d/1BRb_XNANPdTZ8FDO6_OjsfmLdir-VHJR/vie
  7. Click the "Complete" button.
   - Expected Result:
    1. The user is redirect to the home page.
+
+## View product( completed :white_check_mark: )
+### Scenario 1: Successfully view product Steps:
+- Steps:
+ 1. Navigate to the buy bike page.
+ 2. Click the "used bike" button.
+ 3. Select your bike's brand such as yamaha, hero, suzuki, TVS, royal enfield, honda, bajaj and KTM.
+ - Expected Result:
+  1. The user can view their product.
+
+## Edit product details: ( completed :white_check_mark: )
+### Scenario 1: Successfully edit product details Steps:
+- Steps:
+ 1. Navigate to the buy bike page.
+ 2. Click the "used bike" button.
+ 3. Select your bike's brand such as yamaha, hero, suzuki, TVS, royal enfield, honda, bajaj and KTM. 
+ 4. Select your product by clicking the product.
+ 5. Click the "Edit Bike" button.
+ 6. Update the product details.
+ 7. Click the "Save" button.
+- Expected Result: 
+1. The user's product details are updated and the user is redirect to the bike's view page.
+
+## Disable product: ( completed :white_check_mark: ) 
+### Scenario 1: Successfully disable product Steps:
+- Steps:
+ 1. Navigate to the buy bike page.
+ 2. Click the "used bike" button.
+ 3. Select your bike's brand such as yamaha, hero, suzuki, TVS, royal enfield, honda, bajaj and KTM. 
+ 4. Select your product by clicking the product.
+ 5. Click the "Edit Bike" button.
+ 6. Click the "Delete" button.
+- Expected Result:
+1. The product is disabled and the user is redirect to the selecting bike model page.
