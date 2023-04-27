@@ -12,6 +12,6 @@ Problem Statement: https://docs.google.com/document/d/1_A1NzYAhm8i5C93GBYdeEZVka
 
 Market Research: https://docs.google.com/document/d/15tKcuw9GVD-G8AKSvWNaGCS8F0GwIReC2YVWkFNYVnU/edit?usp=sharing
 
-User Flow: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04EXMJG7EF/userflow.png
+User Flow: https://drive.google.com/file/d/1ML9l3XTubEDM64dyGEEfZ-nAptWo-ViH/view?usp=sharing
 
-Wireframe: https://fwbuzz.slack.com/files/U041S9RJ8DT/F04DFSD802E/prassanna_wire_frame_.pdf
+Wireframe: https://drive.google.com/file/d/1BRb_XNANPdTZ8FDO6_OjsfmLdir-VHJR/view?usp=sharing
