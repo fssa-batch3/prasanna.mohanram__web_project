@@ -198,3 +198,7 @@ h1 {
     background-color: white;
     border-radius: 50%;
 }
+
+#notification {
+    display: none;
+}

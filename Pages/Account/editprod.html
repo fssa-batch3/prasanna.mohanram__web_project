@@ -182,6 +182,7 @@
         const resultsearch = urlparams.get("editid");
 
         let product_details = JSON.parse(localStorage.getItem("Product_details"));
+        let curr_index;
 
         product_details.find(function (obj) {
 
@@ -208,7 +209,7 @@
                 document.getElementById("txtImageurl1").value = obj["bike-picture1"];
                 document.getElementById("txtImageurl2").value = obj["bike-picture2"];
                 document.getElementById("txtImageurl3").value = obj["bike-picture3"];
-
+                return curr_index = obj;
             }
         });
 
@@ -333,7 +334,7 @@
                 }
             });
             localStorage.setItem("Product_details", JSON.stringify(Product_details));
-            window.location.href = "../Buy Bike/smodel.html";
+            window.location.href = "../Buy Bike/smodel.html?name=" + curr_index["Bike_brand"];
 
 
         }

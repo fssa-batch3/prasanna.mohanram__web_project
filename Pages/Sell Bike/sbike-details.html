@@ -9,6 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sell Bike</title>
         <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+        <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
+
+
 </head>
 
 <body>
@@ -17,8 +21,8 @@
         <!-- Navigations -->
         <header>
                 <div class="nav">
-                        <a href="index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
-                                        alt="logo"></a>
+                        <a href="../../index.html"><img id="logo"
+                                        src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png" alt="logo"></a>
 
                         <div class="options">
                                 <a class="a1" href="../../Pages/Buy Bike/newold.html">Buy Bike</a>
@@ -130,7 +134,7 @@
                 <button id="Complete" type="submit">Complete</button>
         </form>
 
-        <!-- <div id="notification" class="notification">Product created successfully!</div> -->
+
 
 
         <!-- Footer -->
@@ -157,57 +161,75 @@
                 </div>
         </footer>
 
+
+        <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"> </script>
+        <script>
+                let arr = JSON.parse(localStorage.getItem("Product_details")) ?? [];
+
+                let bike_details = document.getElementById("bike_details");
+
+                bike_details.addEventListener("submit", e => {
+                        e.preventDefault();
+
+
+
+                        let brand = document.getElementById("Bike-brand").value;
+                        let price = document.getElementById("Bike-price").value;
+                        let ownership = document.getElementById("Ownership").value;
+                        let location = document.getElementById("Location").value;
+                        let others = document.getElementById("other-details").value;
+                        let image1 = document.querySelectorAll("#bike-picture")[0].value;
+                        let image2 = document.querySelectorAll("#bike-picture")[1].value;
+                        let image3 = document.querySelectorAll("#bike-picture")[2].value;
+                        let prod_id = Math.floor(Math.random() * 500);
+
+                        let bike = {
+                                "product_id": prod_id,
+                                "Bike_brand": brand,
+                                "Bike-price": price,
+                                "ownership": ownership,
+                                "location": location,
+                                "other-details": others,
+                                "bike-picture1": image1,
+                                "bike-picture2": image2,
+                                "bike-picture3": image3,
+                                "status": true
+                        };
+
+
+
+                        arr.push(bike);
+
+                        localStorage.setItem("Product_details", JSON.stringify(arr));
+                        Notify.success("Product created successfully!")
+
+                        // window.location.href = "../../index.html";
+
+
+                        // const notification = document.getElementById('notification');
+                        // notification.classList.add('show');
+                        // notification.removeAttribute("id", "notification");
+                        // setTimeout(() => notification.classList.remove('show'), 5000);
+                        setTimeout(note,2000)
+                        function note(){
+                                window.location.href = "../../index.html";
+                                
+                        }
+                        
+                        // alert("hello")
+
+                });
+
+
+
+
+
+
+        </script>
+
+
 </body>
-<script>
-        let arr = JSON.parse(localStorage.getItem("Product_details")) ?? [];
-
-        let bike_details = document.getElementById("bike_details");
-
-        bike_details.addEventListener("submit", e => {
 
 
-
-                let brand = document.getElementById("Bike-brand").value;
-                let price = document.getElementById("Bike-price").value;
-                let ownership = document.getElementById("Ownership").value;
-                let location = document.getElementById("Location").value;
-                let others = document.getElementById("other-details").value;
-                let image1 = document.querySelectorAll("#bike-picture")[0].value;
-                let image2 = document.querySelectorAll("#bike-picture")[1].value;
-                let image3 = document.querySelectorAll("#bike-picture")[2].value;
-                let prod_id = Math.floor(Math.random() * 500);
-
-                let bike = {
-                        "product_id": prod_id,
-                        "Bike_brand": brand,
-                        "Bike-price": price,
-                        "ownership": ownership,
-                        "location": location,
-                        "other-details": others,
-                        "bike-picture1": image1,
-                        "bike-picture2": image2,
-                        "bike-picture3": image3,
-                        "status": true
-                };
-
-
-
-                arr.push(bike);
-
-                localStorage.setItem("Product_details", JSON.stringify(arr));
-
-                window.location.href = "../../index.html";
-
-
-                // const notification = document.getElementById('notification');
-                // notification.classList.add('show');
-                // setTimeout(() => notification.classList.remove('show'), 5000);
-
-        })
-
-
-
-
-</script>
 
 </html>
