@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Details</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+
+    
 </head>
 
 <body>
@@ -35,6 +37,8 @@
                 <a href="../../Pages/Account/profile.html"><img id="profile"
                         src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
                         alt="profile_nav_img"></a>
+
+
             </div>
         </div>
     </header>
@@ -46,10 +50,10 @@
     <div class="form">
         <div class="details">
             <div class="container">
-                <form action="">
+                <form id="payment_details">
                     <h3>Buyer Details</h3>
                     <label for="fname"> Full Name</label>
-                    <input type="text" id="fullname" name="firstname" placeholder="Enter Your Full Name">
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name">
                     <label for="mobilenumber"> Mobile Number</label>
                     <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Enter Your Mobile Number">
                     <label for="email"> Email</label>
@@ -57,16 +61,83 @@
                     <label for="adr"> Address</label>
                     <input type="text" id="address" name="address" placeholder="Enter Your Address">
                     <label for="city"> City</label>
-                    <input type="text" id="city" name="city" placeholder="Enter Your City">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="Enter Your State">
+                    <select id="city" name="cities">
+                        <option value="">Select your city</option>
+                        <option value="Ariyalur">Ariyalur</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Cuddalore">Cuddalore</option>
+                        <option value="Dharmapuri">Dharmapuri</option>
+                        <option value="Dindigul">Dindigul</option>
+                        <option value="Erode">Erode</option>
+                        <option value="Kanchipuram">Kanchipuram</option>
+                        <option value="Kanyakumari">Kanyakumari</option>
+                        <option value="Karur">Karur</option>
+                        <option value="Krishnagiri">Krishnagiri</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Nagapattinam">Nagapattinam</option>
+                        <option value="Namakkal">Namakkal</option>
+                        <option value="Nilgiris">Nilgiris</option>
+                        <option value="Perambalur">Perambalur</option>
+                        <option value="Pudukkottai">Pudukkottai</option>
+                        <option value="Ramanathapuram">Ramanathapuram</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Sivaganga">Sivaganga</option>
+                        <option value="Thanjavur">Thanjavur</option>
+                        <option value="Theni">Theni</option>
+                        <option value="Thoothukudi">Thoothukudi</option>
+                        <option value="Tiruchirappalli">Tiruchirappalli</option>
+                        <option value="Tirunelveli">Tirunelveli</option>
+                        <option value="Tiruppur">Tiruppur</option>
+                        <option value="Tiruvallur">Tiruvallur</option>
+                        <option value="Tiruvannamalai">Tiruvannamalai</option>
+                        <option value="Tiruvarur">Tiruvarur</option>
+                        <option value="Vellore">Vellore</option>
+                        <option value="Viluppuram">Viluppuram</option>
+                        <option value="Virudhunagar">Virudhunagar</option>
+                    </select>
+                    <label for="state"> State</label>
+                    <select id="state" name="states">
+                        <option value="">Select your state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
                     <div class="cnt">
-                        <a id="continue" href="../../Pages/Payment/payment.html"><span>Continue</span></a>
+                        <!-- <a id="continue" href="../../Pages/Payment/payment.html"><span>Continue</span></a> -->
+                        <button id="continue" type="submit">Continue</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <!-- <input type="text" id="city" name="city" placeholder="Enter Your City"> -->
 
 
     <!--Footer-->
@@ -92,6 +163,49 @@
             <p class="copyright">All &copy Rights Reserved by BIKERZ ZONE</p>
         </div>
     </footer>
+
+
+
+
+    <script>
+
+
+        let payment = JSON.parse(localStorage.getItem("Payment_details")) ?? [];
+
+        let payment_details = document.getElementById("payment_details");
+
+        payment_details.addEventListener("submit", e => {
+            e.preventDefault();
+
+
+
+            let fullname = document.getElementById("fullname").value;
+            let mobile = document.getElementById("mobilenumber").value;
+            let email = document.getElementById("email").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
+            let state = document.getElementById("state").value;
+
+            let pay = {
+                "fullname": fullname,
+                "mobile_number": mobile,
+                "email": email,
+                "address": address,
+                "city": city,
+                "state": state
+            };
+
+
+
+            payment.push(pay);
+
+            localStorage.setItem("Payment_details", JSON.stringify(payment));
+
+            window.location.href = "../../Pages/Payment/choose.html";
+
+        });
+
+    </script>
 
 
 </body>

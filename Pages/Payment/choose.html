@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your payment method</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/choose.css">
+    <!-- <link rel="stylesheet" href="../../Assets/CSS/demo.css"> -->
+    <link rel="stylesheet" href="../../Assets/CSS/styles.css">
+    <link rel="stylesheet" href="../../Assets/CSS/upi.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+
+<body>
+
+
+    <!--Navigations-->
+
+
+
+    <header>
+        <div class="nav">
+            <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
+                    alt="logo"></a>
+
+            <div class="options">
+                <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
+                <a class="a1" href="../review.html">Review of Bike</a>
+                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
+                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- <button>Place Order</button> -->
+        <!-- <button>Verify & Place Order</button> -->
+        <!-- <button>Place Order</button> -->
+
+
+
+
+        <h3 id="cpm">Choose payment method</h3>
+        <p id="cpmp">Choose the payment method you prefer</p> <br>
+
+        <h6 id="pmo">Payment Method Options</h6>
+
+        <div class="main-container">
+            <div class="content" id="card">
+                <img id="payment_img" src="../../Assets/Images/card-debit-credit-24_2.png" alt="Card Image">
+                <div class="details">
+                    <p class="method">Credit/Debit Card</p>
+                    <p class="option">Visa, Mastercard, Amex</p>
+                </div>
+                <img class="right_drop" src="../../Assets/Images/dropdown-right-arrow.png" alt="Right Dropdown">
+            </div>
+            <div class="content" id="upi">
+                <img id="payment_img" src="../../Assets/Images/UPI.png" alt="UPI Image">
+                <div class="details">
+                    <p class="method">UPI</p>
+                    <p class="option">Google Pay, PhonePe, Paytm & more</p>
+                </div>
+                <img class="right_drop1" src="../../Assets/Images/dropdown-right-arrow.png" alt="Right Dropdown">
+            </div>
+            <div class="content" id="cash">
+                <img id="payment_img" src="../../Assets/Images/Cod.png" alt="COD Image">
+                <div class="details">
+                    <p class="method">Cash</p>
+                    <p class="option">Pay on Delivery orders can be paid using cash</p>
+                </div>
+                <img class="right_drop2" src="../../Assets/Images/dropdown-right-arrow.png" alt="Right Dropdown">
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="creditCardForm">
+                <div class="heading">
+                    <h1>Confirm Purchase</h1>
+                </div>
+                <div class="payment">
+                    <form id="card_payment">
+                        <div class="form-group owner">
+                            <label for="owner">Owner</label>
+                            <input type="text" class="form-control" id="owner">
+                        </div>
+                        <div class="form-group CVV">
+                            <label for="cvv">CVV</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                        <div class="form-group" id="card-number-field">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber">
+                        </div>
+                        <div class="form-group" id="expiration-date">
+                            <label>Expiration Date</label>
+                            <select id="ex_month">
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select id="ex_year">
+                                <option value="23"> 2023</option>
+                                <option value="24"> 2024</option>
+                                <option value="25"> 2025</option>
+                                <option value="26"> 2026</option>
+                                <option value="27"> 2027</option>
+                                <option value="28"> 2028</option>
+                                <option value="29"> 2029</option>
+                                <option value="30"> 2030</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="credit_cards">
+                            <img src="../../Assets/Images/visa.jpg" id="visa">
+                            <img src="../../Assets/Images/mastercard.jpg" id="mastercard">
+                            <img src="../../Assets/Images/amex.jpg" id="amex">
+                        </div>
+                        <div class="form-group" id="pay-now">
+                            <!-- <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button> -->
+                            <button type="submit" class="btn btn-default"  id="confirm-purchase">Place
+                                Order</button>
+                            <!-- <a id="change" href="../Payment/upi.html">Change</a> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-upi">
+
+            <div class="head">
+
+                <p>UPI/BHIM</p>
+
+                <!-- <a id="change" href="../Payment/pay.html">Change</a> -->
+
+            </div>
+
+            <p style="margin-top: 5px;">Select your UPI app</p>
+
+            <div class="btns">
+                <button id="btn" class="bhim">
+                    <img id="upi_logo" src="../../Assets/Images/bhim-logo-removebg-preview.png" alt="BHIM UPI">
+                </button>
+                <button id="btn" class="phonepe">
+                    <img id="upi_logo" src="../../Assets/Images/phonepe-logo-removebg-preview.png" alt="PhonePe UPI">
+                </button>
+                <button id="btn" class="paytm">
+                    <img id="upi_logo" src="../../Assets/Images/paytm-logo.png" alt="Paytm UPI">
+                </button>
+                <button id="btn" class="gpay">
+                    <img id="upi_logo1" src="../../Assets/Images/google-pay-removebg-preview.png" alt="Gpay UPI">
+                </button>
+            </div>
+
+            <button id="other-upi">OTHER UPI APPS</button>
+
+            <div class="e-upi-bhim">
+                <p id="enter-upi">Enter your UPI ID</p>
+                <input type="text" id="upi-input-bhim" placeholder="Enter UPI ID">
+                <button id="verify-btn" class="Email">Verify & Place Order</button>
+            </div>
+
+            <div class="e-upi-phonepe">
+                <p id="enter-upi">Enter your UPI ID</p>
+                <input type="text" id="upi-input-phonepe" placeholder="Enter UPI ID">
+                <select name="psp" id="upi-phonepe-psp">
+                    <option value="@ybl">@ybl</option>
+                    <option value="@axl">@axl</option>
+                    <option value="@ibl">@ibl</option>
+                </select>
+                <button id="verify-btn" class="Email" >Verify & Place Order</button>
+            </div>
+
+
+            <div class="e-upi-paytm">
+                <p id="enter-upi">Enter your UPI ID</p>
+                <input type="text" id="upi-input-paytm" placeholder="Enter UPI ID">
+                <select name="psp" id="upi-paytm-psp">
+                    <option value="@paytm">@paytm</option>
+                </select>
+                <button id="verify-btn" class="Email">Verify & Place Order</button>
+            </div>
+
+
+            <div class="e-upi-gpay">
+                <p id="enter-upi">Enter your UPI ID</p>
+                <input type="text" id="upi-input-gpay" placeholder="Enter UPI ID">
+                <select name="psp" id="upi-gpay-psp">
+                    <option value="@okicici">@okicici</option>
+                    <option value="@oksbi">@oksbi</option>
+                    <option value="@okaxis">@okaxis</option>
+                    <option value="@okhdfcbank">@okhdfcbank</option>
+                </select>
+                <button id="verify-btn" class="Email" >Verify & Place Order</button>
+            </div>
+
+            <a id="how" href="">How to pay using UPI?</a>
+
+
+        </div>
+
+
+        <div class="captcha">
+            <div>
+                <p style="color: rgb(55, 55, 55);">Due to handling costs, a nominal fee of ₹50 will be charged for
+                    orders placed using this option.
+                    Avoid
+                    this fee by paying online now.</p>
+            </div>
+            <form onsubmit="validateCaptcha()" id="form">
+                <div class="captcha_div">
+                    <div id="captcha">
+                    </div>
+                    <div class="append"></div>
+                </div>
+
+                <input type="text" placeholder="Captcha" id="cpatchaTextBox" />
+                <button id="sub" class="Email"  type="submit">Confirm Order</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- <style>
+        @font-face {
+            font-family: Captcha Code;
+            src: url("../../../../../../Downloads/Captcha code/Captcha\ code.otf");
+        }
+
+        body {
+            font-family:Captcha Code ;
+        }
+    </style> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../jquery.payform.min.js" charset="utf-8"></script>
+    <script src="../../script.js"></script>
+
+
+    <script>
+
+        let profile = JSON.parse(localStorage.getItem("profile_details"));
+
+        document.querySelector(".creditCardForm").style.display = "block";
+        document.querySelector(".container-upi").style.display = "none";
+        document.querySelector(".captcha").style.display = "none";
+
+
+        document.getElementById("card").addEventListener("click", (e) => {
+
+            document.querySelector(".creditCardForm").style.display = "block";
+            document.querySelector(".container-upi").style.display = "none";
+            document.querySelector(".captcha").style.display = "none";
+        })
+
+        document.getElementById("upi").addEventListener("click", (e) => {
+
+            document.querySelector(".container-upi").style.display = "block";
+            document.querySelector(".creditCardForm").style.display = "none";
+            document.querySelector(".captcha").style.display = "none";
+        })
+
+        document.getElementById("cash").addEventListener("click", (e) => {
+
+            document.querySelector(".captcha").style.display = "block";
+            document.querySelector(".container-upi").style.display = "none";
+            document.querySelector(".creditCardForm").style.display = "none";
+            createCaptcha();
+        })
+
+        let bhim = document.querySelector(".bhim")
+        bhim.addEventListener("click", (e) => {
+            let bhim_btn = document.querySelector(".e-upi-bhim")
+            let paytm_btn = document.querySelector(".e-upi-paytm")
+            bhim_btn.style.display = "block";
+            document.querySelector(".e-upi-phonepe").style.display = "none";
+            paytm_btn.style.display = "none";
+            document.querySelector(".e-upi-gpay").style.display = "none";
+        })
+
+        let phonepe = document.querySelector(".phonepe")
+        phonepe.addEventListener("click", (e) => {
+            let phonepe_btn = document.querySelector(".e-upi-phonepe")
+            let paytm_btn = document.querySelector(".e-upi-paytm")
+            phonepe_btn.style.display = "block";
+            document.querySelector(".e-upi-bhim").style.display = "none";
+            paytm_btn.style.display = "none";
+            document.querySelector(".e-upi-gpay").style.display = "none";
+        })
+
+        let paytm = document.querySelector(".paytm")
+        paytm.addEventListener("click", (e) => {
+            let paytm_btn = document.querySelector(".e-upi-paytm")
+            paytm_btn.style.display = "block";
+            document.querySelector(".e-upi-bhim").style.display = "none";
+            document.querySelector(".e-upi-phonepe").style.display = "none";
+            document.querySelector(".e-upi-gpay").style.display = "none";
+        })
+
+
+        let gpay = document.querySelector(".gpay")
+        gpay.addEventListener("click", (e) => {
+            let gpay_btn = document.querySelector(".e-upi-gpay")
+            let paytm_btn = document.querySelector(".e-upi-paytm")
+            gpay_btn.style.display = "block";
+            document.querySelector(".e-upi-bhim").style.display = "none";
+            document.querySelector(".e-upi-phonepe").style.display = "none";
+            paytm_btn.style.display = "none";
+        })
+
+        // let mail = document.querySelector("#sub");
+        // mail.addEventListener("click", e => {
+        //     e.preventDefault();
+        //     console.log("Hi");
+        //     mail();
+            
+        // })
+
+
+    </script>
+
+    <script>
+        createCaptcha();
+
+        let refresh_img = document.createElement("img");
+        refresh_img.setAttribute("src", "../../Assets/Images/icons8-reset-24.png");
+        refresh_img.setAttribute("alt", "Refresh_image");
+        refresh_img.setAttribute("id", "refresh-img");
+        document.querySelector(".append").append(refresh_img);
+
+
+        var code;
+        function createCaptcha() {
+            //clear the contents of captcha div first 
+            document.getElementById('captcha').innerHTML = "";
+            var charsArray =
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            var lengthOtp = 6;
+            var captcha = [];
+            for (var i = 0; i < lengthOtp; i++) {
+                //below code will not allow Repetition of Characters
+                var index = Math.floor(Math.random() * charsArray.length + 1); //get the next character from the array
+                if (captcha.indexOf(charsArray[index]) == -1)
+                    captcha.push(charsArray[index]);
+                else i--;
+            }
+            var canv = document.createElement("canvas");
+            canv.id = "captcha";
+            canv.width = 100;
+            canv.height = 50;
+            var ctx = canv.getContext("2d");
+            ctx.font = "25px Georgia";
+            ctx.strokeText(captcha.join(""), 0, 30);
+            //storing captcha so that can validate you can save it somewhere else according to your specific requirements
+            code = captcha.join("");
+            document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
+        }
+        function validateCaptcha() {
+            event.preventDefault();
+            debugger
+            if (document.getElementById("cpatchaTextBox").value == code) {
+                // alert("Valid Captcha")
+                // location.reload();
+                mail();
+            } else {
+                alert("Invalid Captcha. try Again");
+                createCaptcha();
+            }
+        }
+
+        let rfsh = document.getElementById("refresh-img");
+        rfsh.addEventListener("click", (e) => {
+            createCaptcha();
+        })
+
+
+    </script>
+
+
+    <script>
+
+        let upi_bhim_payment = document.querySelectorAll("#verify-btn")[0];
+
+        upi_bhim_payment.addEventListener("click", (l) => {
+
+            l.preventDefault();
+
+            let upi_bhim_pay = JSON.parse(localStorage.getItem("UPI_payment_details")) ?? [];
+
+
+            let upi_bhim_id = document.getElementById("upi-input-bhim");
+
+            let upi_bhim = {
+                "user_bhim_id": upi_bhim_id.value
+            };
+
+            upi_bhim_pay.push(upi_bhim);
+
+            localStorage.setItem("UPI_payment_details", JSON.stringify(upi_bhim_pay));
+            upi_bhim_id.value = " ";
+
+            mail();
+
+        });
+
+        let upi_phonepe_payment = document.querySelectorAll("#verify-btn")[1];
+
+        upi_phonepe_payment.addEventListener("click", (e) => {
+
+            let upi_phonepe_pay = JSON.parse(localStorage.getItem("UPI_payment_details")) ?? [];
+
+            let upi_phonepe_id = document.getElementById("upi-input-phonepe");
+            let upi_phonepe_psp = document.getElementById("upi-phonepe-psp").value;
+
+            let upi_phonepe = {
+                "user_phonepe_name": upi_phonepe_id.value,
+                "user_phonepe_psp": upi_phonepe_psp
+            };
+
+            upi_phonepe_pay.push(upi_phonepe);
+
+            localStorage.setItem("UPI_payment_details", JSON.stringify(upi_phonepe_pay));
+            upi_phonepe_id.value = " ";
+
+            mail();
+        });
+
+
+        let upi_paytm_payment = document.querySelectorAll("#verify-btn")[2];
+
+        upi_paytm_payment.addEventListener("click", (e) => {
+
+            let upi_paytm_pay = JSON.parse(localStorage.getItem("UPI_payment_details")) ?? [];
+
+            let upi_paytm_id = document.getElementById("upi-input-paytm");
+            let upi_paytm_psp = document.getElementById("upi-paytm-psp").value;
+
+            let upi_paytm = {
+                "user_paytm_name": upi_paytm_id.value,
+                "user_paytm_psp": upi_paytm_psp
+            };
+
+            upi_paytm_pay.push(upi_paytm);
+
+            localStorage.setItem("UPI_payment_details", JSON.stringify(upi_paytm_pay));
+            upi_paytm_id.value = " ";
+
+            mail();
+
+        });
+
+
+        let upi_gpay_payment = document.querySelectorAll("#verify-btn")[3];
+
+        upi_gpay_payment.addEventListener("click", (e) => {
+
+            let upi_gpay_pay = JSON.parse(localStorage.getItem("UPI_payment_details")) ?? [];
+
+            let upi_gpay_id = document.getElementById("upi-input-gpay");
+            let upi_gpay_psp = document.getElementById("upi-gpay-psp").value;
+
+            let upi_gpay = {
+                "user_gpay_name": upi_gpay_id.value,
+                "user_gpay_psp": upi_gpay_psp
+            };
+
+            upi_gpay_pay.push(upi_gpay);
+
+            localStorage.setItem("UPI_payment_details", JSON.stringify(upi_gpay_pay));
+            upi_gpay_id.value = " ";
+
+            mail();
+
+        });
+
+
+        function mail(){
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "prasannabalajikm@gmail.com",
+        Password: "0F71EB16C8ACE2FABC4039D1E1807604E919",
+        To: profile["email"],
+        From: "prasannabalajikm@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then( 
+        message => alert("Payment sucess")
+    );
+    // console.log(profile["email"]);
+}
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

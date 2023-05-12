@@ -290,6 +290,9 @@
         const buyNowBtn = document.createElement('button');
         buyNowBtn.classList.add('btn');
         buyNowBtn.textContent = 'Buy Now';
+        buyNowBtn.onclick = ()=>{
+            window.location.href = "../Payment/pdetails.html";
+        };
 
         const editBtn = document.createElement('button');
         editBtn.classList.add('ebtn');
