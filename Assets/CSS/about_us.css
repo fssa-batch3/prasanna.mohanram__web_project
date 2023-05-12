@@ -114,7 +114,7 @@ main {
 }
 
 .story {
-    background-image: linear-gradient(rgba(92, 92, 92, 0.58), rgba(92, 92, 92, 0.58)), url(../Images/wallpaperflare.com_wallpaper.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../Images/wallpaperflare.com_wallpaper.jpg);
     background-size: 100%;
     background-attachment: fixed;
     width: 100%;
@@ -137,18 +137,65 @@ main {
     padding-top: 80px;
     margin-left: 150px;
     margin-right: 150px;
+    margin-bottom: 0;
+}
+
+#thankyou {
+    background-image: linear-gradient(to right,
+            #b300ff,
+            #54c5d6 50%,
+            #000000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 32px;
+    margin-left: 34%;
+    font-weight: bolder;
+}
+
+#thankyou:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#thankyou:hover {
+    background-position: 0;
+}
+
+#thankyou:hover::before {
+    width: 100%;
 }
 
 footer {
     background-color: black;
     height: 200px;
     margin-top: 0;
+    font-family: Russo One;
 }
 
 .icons {
+    /* margin-top: 20px; */
+    height: 30px;
+    width: 30px;
+    /* margin-left: 40px; */
+}
+
+.footer_a {
     margin-top: 20px;
     height: 30px;
     width: 30px;
+    margin-left: 40px;
 }
 
 .foot {
