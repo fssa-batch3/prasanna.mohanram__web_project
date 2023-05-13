@@ -340,3 +340,133 @@ canvas {
 input::placeholder {
     color: rgba(100, 100, 100, 0.6);
 }
+
+.container_order {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(244, 244, 244, 0.5);
+    margin-left: 150px;
+    margin-right: 150px;
+    display: none;
+    position: relative;
+    top: -1300px;
+    background-color: white;
+    transition: 2s;
+}
+
+.order_confirm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.confirm_msg {
+    width: 500px;
+    padding-right: 25px;
+    border-right: 3px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    margin-left: -200px;
+}
+
+#order_heading,
+#order_text,
+#order_view {
+    text-align: center;
+}
+
+#order_heading {
+    font-weight: bolder;
+    font-size: 38px;
+    color: #00d0a6;
+    margin-top: 5px;
+}
+
+#order_text {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#order_view {
+    color: rgb(0, 66, 199);
+}
+
+.order_greeting {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    padding-left: 125px;
+    border-left: 3px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+
+#note {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgba(9, 0, 30, 0.6);
+}
+
+#bold {
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#order_img {
+    width: 300px;
+    position: relative;
+    top: -1850px;
+    left: 72%;
+    rotate: -10deg;
+    display: none;
+}
+
+footer {
+    background-color: black;
+    /* height: 200px; */
+    margin-top: 0;
+    font-family: Russo One;
+}
+
+.icons {
+    /* margin-top: 20px; */
+    height: 30px;
+    width: 30px;
+    /* margin-left: 40px; */
+}
+
+.footer_a {
+    /* margin-top: 20px; */
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 106px;
+    margin-top: 35px;
+    text-shadow: none;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}

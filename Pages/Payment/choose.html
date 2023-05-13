@@ -33,7 +33,7 @@
                 <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
                 <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../review.html">Review of Bike</a>
-                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
                 <a class="a1" href="../About/about_us.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
                 <a href="../../Pages/Account/profile.html"><img id="profile"
@@ -242,7 +242,56 @@
                 <button id="sub" class="Email"  type="submit">Confirm Order</button>
             </form>
         </div>
+
+
+
+
+        <div class="container_order">
+            <div class="order_confirm">
+            <div class="confirm_msg">
+                <h3 id="order_heading">Order Confirmed</h3>
+                <p id="order_text">Your order is currently being processed. You will receive an order confirmation email shortly with the expected delivery date for your product.</p>
+                <p id="order_view">VIEW ORDER</p>
+            </div>
+            <div class="order_greeting">
+                <p style="font-size: 32px;">Thanks for shopping with us online!</p>
+            </div>
+        </div>
+        <p id="note"><span id="bold">Note: </span>We do not demand your banking and credit card details verbally or telephonically. Please do not divulge your details to fraudsters and imposters falsely claiming to be calling on Flenco's behalf.</p>
+        </div>
+        <img id="order_img" src="../../Assets/Images/grunge-red-order-confirmed-word-with-star-icon-round-rubber-seal-stamp-on-white-background-2J9BYYA.jpg" alt="Order Completed image">
+
+
+
     </main>
+
+
+    <!--Footer-->
+
+
+    <footer>
+        <div class="foot">
+            <img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png" alt="logo">
+            <p id="follow">Follow us:</p>
+            <a class="footer_a" href="https://www.linkedin.com/in/prasanna-balaji-1835a9251"><img class="icons"
+                    src="../../Assets/Images/linkedin.png" alt="linkedin image"></a>
+            <a class="footer_a"
+                href="https://www.instagram.com/invites/contact/?i=mqxel6l8j6sc&utm_content=keud4xo"><img class="icons"
+                    src="../../Assets/Images/instagram (1).png" alt="instagram image"></a>
+            <a class="footer_a" href="https://mobile.twitter.com/PRaSannaBrokeN"><img class="icons"
+                    src="../../Assets/Images/twitter.png" alt="twitter image"></a>
+            <a class="footer_a" href="https://youtube.com/@user-yr8hg8ij1b"><img class="icons"
+                    src="../../Assets/Images/youtube.png" alt="youtube image"></a>
+            <a class="footer_a" href="https://www.facebook.com/prasanna.balaji.796?mibextid=ZbWKwL"><img class="icons"
+                    src="../../Assets/Images/facebook.png" alt="facebook image"> </a>
+        </div>
+        <hr>
+        <div class="foot1">
+            <p class="copyright">All &copy Rights Reserved by BIKERZ ZONE</p>
+        </div>
+    </footer>
+
+    
 
     <!-- <style>
         @font-face {
@@ -386,6 +435,20 @@
                 // alert("Valid Captcha")
                 // location.reload();
                 mail();
+
+                setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
+
             } else {
                 alert("Invalid Captcha. try Again");
                 createCaptcha();
@@ -405,9 +468,9 @@
 
         let upi_bhim_payment = document.querySelectorAll("#verify-btn")[0];
 
-        upi_bhim_payment.addEventListener("click", (l) => {
+        upi_bhim_payment.addEventListener("click", (e) => {
 
-            l.preventDefault();
+            e.preventDefault();
 
             let upi_bhim_pay = JSON.parse(localStorage.getItem("UPI_payment_details")) ?? [];
 
@@ -424,6 +487,19 @@
             upi_bhim_id.value = " ";
 
             mail();
+
+            setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
 
         });
 
@@ -447,6 +523,19 @@
             upi_phonepe_id.value = " ";
 
             mail();
+
+            setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
         });
 
 
@@ -471,6 +560,19 @@
 
             mail();
 
+            setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
+
         });
 
 
@@ -494,6 +596,19 @@
             upi_gpay_id.value = " ";
 
             mail();
+
+            setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
 
         });
 

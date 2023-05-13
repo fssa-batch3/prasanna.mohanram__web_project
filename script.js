@@ -9,6 +9,7 @@ $(function () {
     var visa = $("#visa");
     var amex = $("#amex");
 
+
     // Use the payform library to format and validate
     // the payment fields.
 
@@ -40,6 +41,7 @@ $(function () {
             visa.addClass('transparent');
         }
     });
+
 
 
     confirmButton.click(function (e) {
@@ -83,6 +85,20 @@ $(function () {
 
             mail();
 
+            setTimeout(block,3000)
+            function block() {
+                document.querySelector(".container_order").style.display = "block";
+                document.getElementById("order_img").style.display = "block";
+            }
+
+            setTimeout(note,8000)
+            function note(){
+                 document.querySelector(".container_order").style.display = "none";
+                 document.getElementById("order_img").style.display = "none"; 
+                 window.location.href = "../../index.html";      
+            }
+
+
             // Everything is correct. Add your form submission code here.
             // alert("Everything is correct");
 
@@ -95,11 +111,13 @@ $(function () {
 });
 
 function mail(){
+    let profile = JSON.parse(localStorage.getItem("profile_details"));
+
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "prasannabalajikm@gmail.com",
         Password: "0F71EB16C8ACE2FABC4039D1E1807604E919",
-        To: 'srikann.2003@gmail.com',
+        To: profile["email"],
         From: "prasannabalajikm@gmail.com",
         Subject: "This is the subject",
         Body: "And this is the body"

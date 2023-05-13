@@ -69,8 +69,40 @@ main {
 }
 
 #welcome {
-    text-align: center;
+    background-image: linear-gradient(to left,
+            #000000 50%,
+            #b300ff 50%,
+            #54c5d6);
+    background-size: 200% 100%;
+    background-position: 100%;
+    display: inline-block;
+    padding: 5px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
     font-size: 42px;
+    margin-left: 46%;
+    font-weight: bolder;
+}
+
+#welcome:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#welcome:hover {
+    background-position: 0;
+}
+
+#welcome:hover::before {
+    width: 100%;
 }
 
 #welcome_msg {
