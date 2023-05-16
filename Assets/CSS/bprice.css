@@ -49,10 +49,14 @@ a {
     padding: 10px;
     box-shadow: 2px 2px 6px 2px black;
 }
-
+main{
+    /* overflow: scroll; */
+    overflow-x: hidden;
+}
 .main-container {
     display: flex;
-    overflow: -moz-hidden-unscrollable;
+    /* overflow: -moz-hidden-unscrollable; */
+    
 }
 
 .bike-img {
@@ -65,12 +69,15 @@ a {
 
 .main-container {
     animation-name: move;
-    animation-duration: 15s;
-    /* animation-delay: 1.5s; */
+    animation-duration: 20s;
+    /* animation-delay: 1.5s;  */
     /* animation-fill-mode: both; */
     animation-direction: reverse;
+    /* animation-direction:unset; */
     animation-iteration-count: infinite;
-
+    /* animation-fill-mode:initial; */
+    /* overflow: hidden; */
+    width: 80%;
 }
 
 @keyframes move {
@@ -177,10 +184,22 @@ a {
     125% {
         transform: translate(-2500px);
     }
-
-
-
 }
+
+/* #dotted_img1 {
+    position: relative;
+    left: 1050px;
+    top: -1450px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#dotted_img2 {
+    position: relative;
+    left: -1050px;
+    top: -1450px;
+    z-index: -1;
+} */
 
 .bike_card {
     display: flex;

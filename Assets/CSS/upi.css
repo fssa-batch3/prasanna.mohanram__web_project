@@ -71,9 +71,9 @@ a {
 
 .container-upi {
     display: none;
-    position: relative;
-    top: -700px;
-    left: 300px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
     border: 2px solid rgb(225, 225, 225);
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;

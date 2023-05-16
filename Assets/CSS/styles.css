@@ -1,8 +1,8 @@
 .creditCardForm {
     display: none;
-    position: relative;
-    top: -650px;
-    left: 250px;
+    position: absolute;
+    top: 230px;
+    left: 550px;
     max-width: 700px;
     height: 550px;
     background-color: #FFF9C4;

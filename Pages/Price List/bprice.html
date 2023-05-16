@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Price List</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +46,7 @@
             <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
                     alt="R15 Black">
                 <div class="bike_detail">
-                    <p>Yamaha R15 V3 Black</p>
+                    <p id="yamaha_id">Yamaha R15 V3 Black</p>
                     <p>Old Price: ₹ 1.85 Lakh</p>
                     <p>Now: ₹ 1.59 Lakh</p>
                     <p>Future Price: ₹ 1.43 Lakh</p>
@@ -211,7 +212,7 @@
             <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
                     alt="R15 Grey">
                 <div class="bike_detail">
-                    <p>Yamaha R15 V3 Grey</p>
+                    <p id="yamaha_id">Yamaha R15 V3 Grey</p>
                     <p>Old Price: ₹ 1.85 Lakh</p>
                     <p>Now: ₹ 1.59 Lakh</p>
                     <p>Future Price: ₹ 1.43 Lakh</p>
@@ -515,6 +516,10 @@
         </div>
     </main>
 
+    <!-- <img id="dotted_img1" src="../../Assets/Images/best-bike-dotted.png" alt="Image">
+    <img id="dotted_img2" src="../../Assets/Images/best-bike-dotted.png" alt="Image"> -->
+
+
 
     <!--Footer-->
 
@@ -581,6 +586,24 @@
 
         // })
         // })
+
+        let existingbikes = JSON.parse(localStorage.getItem("product_bikes")) ?? [];
+        getBike("Hero", "")
+        function getBike(brand, model) {
+            $.ajax({
+                method: 'GET',
+                url: `https://api.api-ninjas.com/v1/motorcycles?make=${brand}&model=${model}`,
+                headers: { 'X-Api-Key': 'igSf1NGJferfMcjV30RDyQ==KpFEtoNtsCnn7Qv8' },
+                contentType: 'application/json',
+                success: function (result) {
+                    existingbikes.push(result)
+                    localStorage.setItem("product_bikes" , JSON.stringify(existingbikes));
+                },
+                error: function ajaxError(jqXHR) {
+                    console.error('Error: ', jqXHR.responseText);
+                }
+            });
+        }   
 
 
     </script>

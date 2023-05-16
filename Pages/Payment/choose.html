@@ -94,7 +94,7 @@
                 <div class="payment">
                     <form id="card_payment">
                         <div class="form-group owner">
-                            <label for="owner">Owner</label>
+                            <label for="owner">Card Holder Name</label>
                             <input type="text" class="form-control" id="owner">
                         </div>
                         <div class="form-group CVV">
@@ -108,18 +108,18 @@
                         <div class="form-group" id="expiration-date">
                             <label>Expiration Date</label>
                             <select id="ex_month">
-                                <option value="01">January</option>
-                                <option value="02">February </option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
+                                <option value="0">January</option>
+                                <option value="1">February </option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
                             </select>
                             <select id="ex_year">
                                 <option value="23"> 2023</option>
@@ -242,28 +242,23 @@
                 <button id="sub" class="Email"  type="submit">Confirm Order</button>
             </form>
         </div>
-
-
-
-
-        <div class="container_order">
-            <div class="order_confirm">
-            <div class="confirm_msg">
-                <h3 id="order_heading">Order Confirmed</h3>
-                <p id="order_text">Your order is currently being processed. You will receive an order confirmation email shortly with the expected delivery date for your product.</p>
-                <p id="order_view">VIEW ORDER</p>
-            </div>
-            <div class="order_greeting">
-                <p style="font-size: 32px;">Thanks for shopping with us online!</p>
-            </div>
-        </div>
-        <p id="note"><span id="bold">Note: </span>We do not demand your banking and credit card details verbally or telephonically. Please do not divulge your details to fraudsters and imposters falsely claiming to be calling on Flenco's behalf.</p>
-        </div>
-        <img id="order_img" src="../../Assets/Images/grunge-red-order-confirmed-word-with-star-icon-round-rubber-seal-stamp-on-white-background-2J9BYYA.jpg" alt="Order Completed image">
-
-
-
     </main>
+
+
+    <div class="container_order">
+        <div class="order_confirm">
+        <div class="confirm_msg">
+            <h3 id="order_heading">Order Confirmed</h3>
+            <p id="order_text">Your order is currently being processed. You will receive an order confirmation email shortly with the expected delivery date for your product.</p>
+            <p id="order_view">VIEW ORDER</p>
+        </div>
+        <div class="order_greeting">
+            <p style="font-size: 32px;">Thanks for shopping with us online!</p>
+        </div>
+    </div>
+    <p id="note"><span id="bold">Note: </span>We do not demand your banking and credit card details verbally or telephonically. Please do not divulge your details to fraudsters and imposters falsely claiming to be calling on Flenco's behalf.</p>
+    </div>
+    <img id="order_img" src="../../Assets/Images/grunge-red-order-confirmed-word-with-star-icon-round-rubber-seal-stamp-on-white-background-2J9BYYA-removebg-preview.png" alt="Order Completed image">
 
 
     <!--Footer-->
@@ -291,7 +286,7 @@
         </div>
     </footer>
 
-    
+
 
     <!-- <style>
         @font-face {
@@ -436,11 +431,13 @@
                 // location.reload();
                 mail();
 
-                setTimeout(block,3000)
+                setTimeout(block,2500)
             function block() {
                 document.querySelector(".container_order").style.display = "block";
                 document.getElementById("order_img").style.display = "block";
+                document.querySelector("main").style.filter = "blur(8px)";                
             }
+
 
             setTimeout(note,8000)
             function note(){
@@ -459,7 +456,7 @@
         rfsh.addEventListener("click", (e) => {
             createCaptcha();
         })
-
+        
 
     </script>
 
@@ -488,10 +485,11 @@
 
             mail();
 
-            setTimeout(block,3000)
+            setTimeout(block,2500)
             function block() {
                 document.querySelector(".container_order").style.display = "block";
                 document.getElementById("order_img").style.display = "block";
+                document.querySelector("main").style.filter = "blur(8px)";
             }
 
             setTimeout(note,8000)
@@ -524,10 +522,11 @@
 
             mail();
 
-            setTimeout(block,3000)
+            setTimeout(block,2500)
             function block() {
                 document.querySelector(".container_order").style.display = "block";
                 document.getElementById("order_img").style.display = "block";
+                document.querySelector("main").style.filter = "blur(8px)";
             }
 
             setTimeout(note,8000)
@@ -560,10 +559,11 @@
 
             mail();
 
-            setTimeout(block,3000)
+            setTimeout(block,2500)
             function block() {
                 document.querySelector(".container_order").style.display = "block";
                 document.getElementById("order_img").style.display = "block";
+                document.querySelector("main").style.filter = "blur(8px)";
             }
 
             setTimeout(note,8000)
@@ -597,10 +597,11 @@
 
             mail();
 
-            setTimeout(block,3000)
+            setTimeout(block,2500)
             function block() {
                 document.querySelector(".container_order").style.display = "block";
                 document.getElementById("order_img").style.display = "block";
+                document.querySelector("main").style.filter = "blur(8px)";
             }
 
             setTimeout(note,8000)

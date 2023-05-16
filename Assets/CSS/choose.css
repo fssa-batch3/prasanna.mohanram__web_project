@@ -202,8 +202,8 @@ canvas {
 }
 
 .captcha {
-    position: relative;
-    top: -500px;
+    position: absolute;
+    top: 350px;
     left: 650px;
     width: 300px;
 }
@@ -349,7 +349,7 @@ input::placeholder {
     margin-right: 150px;
     display: none;
     position: relative;
-    top: -1300px;
+    top: -550px;
     background-color: white;
     transition: 2s;
 }
@@ -418,7 +418,7 @@ input::placeholder {
 #order_img {
     width: 300px;
     position: relative;
-    top: -1850px;
+    top: -1150px;
     left: 72%;
     rotate: -10deg;
     display: none;
@@ -426,8 +426,8 @@ input::placeholder {
 
 footer {
     background-color: black;
-    /* height: 200px; */
-    margin-top: 0;
+    height: 220px;
+    margin-top: 100px;
     font-family: Russo One;
 }
 
@@ -464,6 +464,7 @@ footer {
     color: whitesmoke;
     text-align: center;
     width: 100%;
+    font-size: 18px;
 }
 
 hr {

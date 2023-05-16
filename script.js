@@ -52,53 +52,71 @@ $(function () {
         var isCvvValid = $.payform.validateCardCVC(CVV.val());
 
         if (owner.val().length < 5) {
-            alert("Wrong owner name");
+            alert("Wrong card holder name");
         } else if (!isCardValid) {
             alert("Wrong card number");
         } else if (!isCvvValid) {
             alert("Wrong CVV");
         } else {
 
-            let card_pay = JSON.parse(localStorage.getItem("Card_payment_details")) ?? [];
 
-            // e.preventDefault();
+            let d = new Date().getMonth()
+            let ex_month = document.getElementById("ex_month").value;
+            let ex_year = document.getElementById("ex_year").value;
+            console.log(ex_year > 23);
+            console.log(ex_year);
+            function payment() {
+                let card_pay = JSON.parse(localStorage.getItem("Card_payment_details")) ?? [];
 
-            let name = document.getElementById("owner").value;
-            let cvv = document.getElementById("cvv").value;
-            let number = document.getElementById("cardNumber").value;
-            let month = document.getElementById("ex_month").value;
-            let year = document.getElementById("ex_year").value;
+                // e.preventDefault();
 
-
-            let card = {
-                "owner": name,
-                "cvv": cvv,
-                "cardNumber": number,
-                "ex_month": month,
-                "ex_year": year
-            };
-
-            card_pay.push(card);
-
-            localStorage.setItem("Card_payment_details", JSON.stringify(card_pay));
+                let name = document.getElementById("owner").value;
+                let cvv = document.getElementById("cvv").value;
+                let number = document.getElementById("cardNumber").value;
+                let month = document.getElementById("ex_month").value;
+                let year = document.getElementById("ex_year").value;
 
 
-            mail();
+                let card = {
+                    "owner": name,
+                    "cvv": cvv,
+                    "cardNumber": number,
+                    "ex_month": month,
+                    "ex_year": year
+                };
 
-            setTimeout(block,3000)
-            function block() {
-                document.querySelector(".container_order").style.display = "block";
-                document.getElementById("order_img").style.display = "block";
+                card_pay.push(card);
+
+                localStorage.setItem("Card_payment_details", JSON.stringify(card_pay));
+
+
+                mail();
+
+                setTimeout(block, 1000)
+                function block() {
+                    document.querySelector(".container_order").style.display = "block";
+                    document.getElementById("order_img").style.display = "block";
+                    document.querySelector("main").style.filter = "blur(8px)";
+                }
+
+                setTimeout(note, 8000)
+                function note() {
+                    document.querySelector(".container_order").style.display = "none";
+                    document.getElementById("order_img").style.display = "none";
+                    window.location.href = "../../index.html";
+                }
             }
 
-            setTimeout(note,8000)
-            function note(){
-                 document.querySelector(".container_order").style.display = "none";
-                 document.getElementById("order_img").style.display = "none"; 
-                 window.location.href = "../../index.html";      
+            if (ex_year > 23) {
+                payment()
+
+            } else if (ex_year >= 23 && ex_month >= d) {
+                payment()
             }
 
-
+            else {
+                alert("Your card is expired!!");
+            }
             // Everything is correct. Add your form submission code here.
             // alert("Everything is correct");
 
@@ -110,7 +128,7 @@ $(function () {
     });
 });
 
-function mail(){
+function mail() {
     let profile = JSON.parse(localStorage.getItem("profile_details"));
 
     Email.send({
@@ -125,5 +143,4 @@ function mail(){
         message => alert(message)
     );
 }
-
 

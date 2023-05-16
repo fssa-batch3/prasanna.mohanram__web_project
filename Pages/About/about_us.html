@@ -28,7 +28,7 @@
                 <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../review.html">Review of Bike</a>
                 <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
-                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../About/about_us.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
                 <a href="../../Pages/Account/profile.html"><img id="profile"
                         src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
@@ -57,20 +57,13 @@
             </div>
         </div>
 
-        <div class="story">
+
+
+        <div class="ourstory">
             <h5 id="heading_story">Our Story</h5>
-            <p class="story_detail">Our team started in the web hosting industry. After a few years, we discovered there
-                were too many challenges to making a website. Traditional web hosting services were complicated and
-                expensive to manage.</p>
-
-            <p class="story_detail"> Seeing a need for simplicity, the Website.com site builder was born. We wanted to
-                offer a website building platform that would require no coding skills or design experience, with
-                everything needed to get published online. You can simply focus on creating an amazing website that
-                reflects your brand.</p>
-
-            <p class="story_detail"> After seeing an increased need for ecommerce solutions, we developed one of the
-                only fully-featured, free and commission-free online store builders. As our global userbase grew, we
-                expanded our editor with the ability to make multilingual websites.</p>
+            <p id="story" class="story_detail"></p>
+            <p id="story1" class="story_detail"></p>
+            <p id="story2" class="story_detail"></p>
         </div>
 
         <p id="thankyou">Thank You for Visiting Our Website</p>
@@ -103,7 +96,64 @@
     </footer>
 
 
+    <script>
 
+
+        const textPara1 = `Our team started in the web hosting industry. After a few years, we discovered there were too many challenges to making a website. Traditional web hosting services were complicated and expensive to manage.`;
+
+        const textPara2 = `Seeing a need for simplicity, the Website.com site builder was born. We wanted to
+        offer a website building platform that would require no coding skills or design experience, with
+        everything needed to get published online. You can simply focus on creating an amazing website that
+        reflects your brand.`;
+
+        const textPara3 = `After seeing an increased need for ecommerce solutions, we developed one of the
+        only fully-featured, free and commission-free online store builders. As our global userbase grew, we
+        expanded our editor with the ability to make multilingual websites.`;
+
+
+
+        let index = 0;
+        const storyElement = document.getElementById("story");
+
+        function type1() {
+            if (index < textPara1.length) {
+                storyElement.innerHTML += textPara1.charAt(index);
+                index++;
+                setTimeout(type1, 15);
+            }
+        }
+        
+
+
+        let index1 = 0;
+        const storyElement1 = document.getElementById("story1");
+
+        function type2() {
+            if (index1 < textPara2.length) {
+                storyElement1.innerHTML += textPara2.charAt(index1);
+                index1++;
+                setTimeout(type2, 15);
+            }
+        }
+        
+
+
+        let index2 = 0;
+        const storyElement2 = document.getElementById("story2");
+
+        function type3() {
+            if (index2 < textPara3.length) {
+                storyElement2.innerHTML += textPara3.charAt(index2);
+                index2++;
+                setTimeout(type3, 15);
+            }
+        }
+        type1();
+        type2();
+        type3();
+
+
+    </script>
 </body>
 
 </html>

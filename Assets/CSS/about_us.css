@@ -85,7 +85,7 @@ main {
     font-weight: bolder;
 }
 
-#welcome:before {
+/* #welcome:before {
     content: '';
     background: #54b3d6;
     display: block;
@@ -95,7 +95,7 @@ main {
     width: 0;
     height: 3px;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 #welcome:hover {
     background-position: 0;
@@ -145,12 +145,15 @@ main {
     border-radius: 5px;
 }
 
-.story {
+.ourstory {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../Images/wallpaperflare.com_wallpaper.jpg);
     background-size: 100%;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
+}
+.ourstory p{
+    color: white;
 }
 
 #heading_story {
@@ -189,7 +192,7 @@ main {
     font-weight: bolder;
 }
 
-#thankyou:before {
+/* #thankyou:before {
     content: '';
     background: #54b3d6;
     display: block;
@@ -199,7 +202,7 @@ main {
     width: 0;
     height: 3px;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 #thankyou:hover {
     background-position: 0;
@@ -255,3 +258,9 @@ hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
 }
+
+  #story, #story1, #story2{
+    /* font-size: 28px; */
+    color: white;
+    text-align: center;
+  }
