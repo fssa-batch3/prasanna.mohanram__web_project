@@ -106,8 +106,6 @@ header {
     border-radius: 5px;
 }
 
-
-
 h6 {
     font-size: 14px;
 }
@@ -221,4 +219,8 @@ input {
 #profile {
     background-color: white;
     border-radius: 50%;
+}
+
+#email {
+    width: 100%;
 }

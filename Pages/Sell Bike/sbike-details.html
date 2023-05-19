@@ -202,12 +202,21 @@
 
                         localStorage.setItem("Product_details", JSON.stringify(arr));
                         Notify.success("Product created successfully!")
-                        setTimeout(note,2000)
-                        function note(){
-                                window.location.href = "../Buy Bike/smodel.html";       
+                        setTimeout(note, 2000)
+                        function note() {
+                                window.location.href = "../Buy Bike/smodel.html";
                         }
                 });
 
+
+                if (!localStorage.getItem("profile_details")) {
+                        setTimeout(redirect, 1500)
+                }
+
+
+                function redirect() {
+                        window.location.href = "../../Pages/Account/login.html";
+                }
 
 
 

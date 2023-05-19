@@ -353,6 +353,16 @@ See on github: https://github.com/muhammederdem/credit-card-form
         });
 
 
+        if(!localStorage.getItem("profile_details")){
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+
     </script>
 
 </body>

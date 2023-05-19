@@ -158,6 +158,7 @@
                     users.splice(i, 1)
 
                     localStorage.setItem("user_signup_list", JSON.stringify(users));
+                    localStorage.removeItem("profile_details")
 
                     window.location.href = "login.html";
                 }
@@ -165,6 +166,16 @@
             }
         }
     }
+
+
+    if(!localStorage.getItem("profile_details")){
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
 
 
 
