@@ -21,7 +21,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -47,65 +49,164 @@ a {
     padding: 10px;
     box-shadow: 2px 2px 6px 2px black;
 }
-
+main{
+    /* overflow: scroll; */
+    overflow-x: hidden;
+}
 .main-container {
     display: flex;
-    overflow: hidden;
+    /* overflow: -moz-hidden-unscrollable; */
+    
 }
 
 .bike-img {
-    width: 400px;
+    width: 280px;
     height: 180px;
     /* transform: translateX(-800px); */
 
 }
 
 
-.main-container img{
+.main-container {
     animation-name: move;
-    animation-duration: 15s;
-    animation-delay: 1.5s;
-    animation-fill-mode: both;
+    animation-duration: 20s;
+    /* animation-delay: 1.5s;  */
+    /* animation-fill-mode: both; */
     animation-direction: reverse;
+    /* animation-direction:unset; */
     animation-iteration-count: infinite;
-
+    /* animation-fill-mode:initial; */
+    /* overflow: hidden; */
+    width: 80%;
 }
+
 @keyframes move {
-    0%{
+    0% {
+        transform: translate(-0px);
+    }
+
+    5% {
         transform: translate(-100px);
     }
-    20%{
-        transform:translate(-200px);
+
+    10% {
+        transform: translate(-200px);
     }
-    30%{
-        transform:translate(-300px);
+
+    15% {
+        transform: translate(-300px);
     }
-    40%{
-        transform:translate(-400px);
+
+    20% {
+        transform: translate(-400px);
     }
-    50%{
-        transform:translate(-500px);
+
+    25% {
+        transform: translate(-500px);
     }
-    60%{
-        transform:translate(-600px);
+
+    30% {
+        transform: translate(-600px);
     }
-    70%{
+
+    35% {
         transform: translate(-700px);
     }
-    80%{
+
+    40% {
         transform: translate(-800px);
     }
-    90%{
+
+    45% {
         transform: translate(-900px);
     }
-    100%{
+
+    50% {
         transform: translate(-1000px);
     }
 
+    55% {
+        transform: translate(-1100px);
+    }
 
-    
+    60% {
+        transform: translate(-1200px);
+    }
+
+    65% {
+        transform: translate(-1300px);
+    }
+
+    70% {
+        transform: translate(-1400px);
+    }
+
+    75% {
+        transform: translate(-1500px);
+    }
+
+    80% {
+        transform: translate(-1600px);
+    }
+
+    85% {
+        transform: translate(-1700px);
+    }
+
+    90% {
+        transform: translate(-1800px);
+    }
+
+    95% {
+        transform: translate(-1900px);
+    }
+
+    100% {
+        transform: translate(-2000px);
+    }
+
+    105% {
+        transform: translate(-2100px);
+    }
+
+    110% {
+        transform: translate(-2200px);
+    }
+
+    115% {
+        transform: translate(-2300px);
+    }
+
+    120% {
+        transform: translate(-2400px);
+    }
+
+    125% {
+        transform: translate(-2500px);
+    }
 }
 
+/* #dotted_img1 {
+    position: relative;
+    left: 1050px;
+    top: -1450px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#dotted_img2 {
+    position: relative;
+    left: -1050px;
+    top: -1450px;
+    z-index: -1;
+} */
+
+.bike_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .center {
     text-align: center;
@@ -113,4 +214,56 @@ a {
 
 h1 {
     margin-top: 100px;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+    font-family: Russo One;
+}
+
+.icons {
+    /* margin-top: 20px; */
+    height: 30px;
+    width: 30px;
+    /* margin-left: 40px; */
+}
+
+.footer_a {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    /* margin-left: 40px; */
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 106px;
+    margin-top: 35px;
+    text-shadow: none;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
 }

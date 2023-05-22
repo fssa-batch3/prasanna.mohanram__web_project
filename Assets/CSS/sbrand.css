@@ -20,7 +20,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -67,7 +69,8 @@ h1 {
 }
 
 .brand-column {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    margin: 100px 200px;
     display: flex;
     flex-direction: column;
 }
@@ -79,8 +82,10 @@ h6 {
 
 .row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .content {
@@ -96,4 +101,9 @@ h6 {
     border-radius: 5px;
     background-color: rgb(250, 250, 250);
     transition: .6s;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

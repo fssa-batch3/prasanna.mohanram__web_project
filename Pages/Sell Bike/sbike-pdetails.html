@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Details</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
 </head>
 
 <body>
@@ -24,9 +26,12 @@
                 <a class="a1" href="../../Pages/Buy Bike/newold.html">Buy Bike</a>
                 <a class="a1" href="../../Pages/Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../../Pages/review.html">Review of Bike</a>
-                <a class="a1" href="../../Pages/Price List/price.html">Price List of Bike</a>
-                <a class="a1" href="../../Pages/About/About.html">About</a>
+                <a class="a1" href="../../Pages/Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../../Pages/About/about_us.html">About</a>
                 <a class="a1" href="../../Pages/Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -35,23 +40,35 @@
     <!-- main -->
 
 
-    <form>
+    <form id="seller_form">
         <h1>Seller Personal Details</h1>
         <fieldset>
-            <label for="name">Enter Your Name : <input id="name" name="name" type="text" required /></label>
+
+            <label for="name">Enter Your Name : <input id="name" name="name" type="text" placeholder="Ex: Prasanna"
+                    title="Name doesn't contain number or spaces" required /></label>
+
             <label for="mobile-number">Enter Your Mobile Number : <input id="mobile-number" name="mobile-number"
-                    type="number" required /></label>
-            <label for="email">Enter Your Email : <input id="email" name="email" type="email" required /></label>
-            <label for="insurance">Insurance : <input id="insurance" name="insurance" type="text" required /></label>
-            <label for="fc">FC : <input id="fc" name="fc" type="text" required /></label>
+                    type="number" pattern="[0-9]{10,10}" minlength="10" maxlength="10"
+                    title="Phone Number doesn't contain letter or spaces and phone number must be 10 digit"
+                    placeholder="Ex: 9876543210" required /></label>
+
+            <label for="email">Enter Your Email : <input id="email" name="email" type="email"
+                    title="Email doesn't contain caps or spaces" placeholder="Ex: example@gmail.com" required /></label>
+
+            <label for="insurance">Insurance : <input id="insurance" name="insurance" type="text"
+                    placeholder="Ex: QQ123456C" required /></label>
+
+            <label for="fc">FC : <input id="fc" name="fc" type="text" placeholder="Ex: Renewed or Not Renewed"
+                    required /></label>
+
         </fieldset>
 
         <fieldset>
             <h3>Is there is any Damages in Your Bike?</h3>
             <div class="damages">
-                <label for="yes"><input id="yes" type="radio" name="bike-damage" class="yes-or-no" />
+                <label for="yes"><input id="yes" type="radio" name="bike-damage" class="yes-or-no" value="yes" />
                     Yes</label>
-                <label for="no"><input id="no" type="radio" name="bike-damage" class="yes-or-no" />
+                <label for="no"><input id="no" type="radio" name="bike-damage" class="yes-or-no" value="no" />
                     No</label>
             </div>
             <label for="terms-and-conditions" name="terms-and-conditions">
@@ -61,7 +78,7 @@
             </label>
         </fieldset>
 
-        <a id="complete" href="../../index.html"> Complete </a>
+        <button id="continue" type="submit"> Continue </button>
     </form>
 
 
@@ -94,5 +111,54 @@
 
 
 </body>
+
+
+<script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+<script>
+
+    let seller_form = document.getElementById("seller_form");
+
+    let ar = JSON.parse(localStorage.getItem("Seller_details")) ?? [];
+
+    seller_form.addEventListener("submit", e => {
+
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("mobile-number").value;
+        let email = document.getElementById("email").value;
+        let insurance = document.getElementById("insurance").value;
+        let FC = document.getElementById("fc").value;
+        let damage = document.querySelector('input[name="bike-damage"]:checked').value ?? "";
+
+        let seller = {
+            "name": name,
+            "mobile-number": phone,
+            "email": email,
+            "insurance": insurance,
+            "fc": FC,
+            "Is bike is damaged?": damage
+        };
+
+        ar.push(seller);
+
+        localStorage.setItem("Seller_details", JSON.stringify(ar));
+
+        window.location.href = "sbike-details.html";
+
+    });
+
+
+    if (!localStorage.getItem("profile_details")) {
+        Notify.error("Please Login!!");
+        setTimeout(redirect, 1500)
+    }
+
+
+    function redirect() {
+        window.location.href = "../../Pages/Account/login.html";
+    }
+
+</script>
 
 </html>

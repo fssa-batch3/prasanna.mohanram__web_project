@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecting New or Old Bike</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
 </head>
 
 <body>
@@ -23,11 +25,14 @@
 
             <div class="options">
                 <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
-                <a class="a1" href="../Sell Bike/sbike-details.html">Sell Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../review.html">Review of Bike</a>
-                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
-                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../About/about_us.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -40,9 +45,9 @@
 
         <div class="form">
             <h1>What kind of bike you want?</h1>
-                <a class="btn" href="../../Pages/Buy Bike/sbrand.html"> New Bikes </a>
+            <a class="btn" href="../../Pages/Buy Bike/sbrand.html"> New Bikes </a>
             <br>
-                <a class="btn" href="../../Pages/Buy Bike/sbrand.html"> Used Bikes </a>
+            <a class="btn" href="../../Pages/Buy Bike/sbrand.html"> Used Bikes </a>
         </div>
 
     </form>
@@ -71,6 +76,24 @@
             <p class="copyright">All &copy Rights Reserved by BIKERZ ZONE</p>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+    <script>
+
+
+        if (!localStorage.getItem("profile_details")) {
+            Notify.error("Please Login!!");
+            setTimeout(redirect, 1500)
+        }
+
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+
+    </script>
 
 </body>
 

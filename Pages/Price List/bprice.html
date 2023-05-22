@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
     <link rel="stylesheet" href="../../Assets/CSS/bprice.css">
@@ -8,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Price List</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
+
 <body>
 
 
@@ -22,11 +27,14 @@
 
             <div class="options">
                 <a class="a1" href="../../Pages/Buy Bike/newold.html">Buy Bike</a>
-                <a class="a1" href="../../Pages/Sell Bike/sbike-details.html">Sell Bike</a>
+                <a class="a1" href="../../Pages/Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../../Pages/review.html">Review of Bike</a>
-                <a class="a1" href="../../Pages//Price List/price.html">Price List of Bike</a>
-                <a class="a1" href="../../Pages/About/About.html">About</a>
+                <a class="a1" href="../../Pages//Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../../Pages/About/about_us.html">About</a>
                 <a class="a1" href="../../Pages/Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -37,14 +45,181 @@
         <h1 class="center">Price List of Bikes</h1>
         <h2 class="center">YAMAHA</h2>
         <div class="main-container">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png" alt="R15 Black">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png" alt="R15 Blue">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png" alt="R15 Grey">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png" alt="R15 Black">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png" alt="R15 Blue">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
-            <img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png" alt="R15 Grey">
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
+                    alt="R15 Black">
+                <div class="bike_detail">
+                    <p id="yamaha_id">Yamaha R15 V3 Black</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png"
+                    alt="R15 Blue">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Blue</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Red</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
+                    alt="R15 Grey">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Grey</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
+                    alt="R15 Black">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Black</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png"
+                    alt="R15 Blue">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Blue</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Red</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
+                    alt="R15 Grey">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Grey</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
+                    alt="R15 Black">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Black</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png"
+                    alt="R15 Blue">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Blue</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Red</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
+                    alt="R15 Grey">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Grey</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
+                    alt="R15 Black">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Black</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png"
+                    alt="R15 Blue">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Blue</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Red</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
+                    alt="R15 Grey">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Grey</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-darknight.png"
+                    alt="R15 Black">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Black</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-racing-blue.png"
+                    alt="R15 Blue">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Blue</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-red.png" alt="R15 Red">
+                <div class="bike_detail">
+                    <p>Yamaha R15 V3 Red</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/yamaha-r15-v30-thunder-grey.png"
+                    alt="R15 Grey">
+                <div class="bike_detail">
+                    <p id="yamaha_id">Yamaha R15 V3 Grey</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
         </div>
         <!-- <button id="btn">Click</button> -->
 
@@ -52,58 +227,399 @@
         <h1 class="center">Price List of Bikes</h1>
         <h2 class="center">HONDA</h2>
         <div class="main-container">
-            <img class="bike-img" src="../../Assets/Images/honda-sp-125.webp" alt="Honda SP 125" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-shine.webp" alt="R15 Blue" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-unicorn.webp" alt="R15 Red" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-hornet2.0.webp" alt="R15 Grey" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-livo.webp" alt="R15 Black" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-xblade.webp" alt="R15 Blue" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-h'nesscb350.png" alt="R15 Red" style="width: 500px; height: 250px;">
-            <img class="bike-img" src="../../Assets/Images/honda-cd110-dream.webp" alt="R15 Grey" style="width: 500px; height: 250px;">
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-sp-125.webp" alt="Honda SP 125"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda SP 125</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-shine.webp" alt="Honda Shine"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Shine</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-unicorn.webp"
+                    alt="Honda Unicorn" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Unicorn</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-hornet2.0.webp"
+                    alt="Honda Hornet 2.0" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Hornet 2.0</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-livo.webp" alt="Honda Livo"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Livo</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-xblade.webp" alt="Honda Xblade"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Xblade</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cb-350-1797.jpg"
+                    alt="Honda Hness CB350" style="width: 400px; height: 200px;">
+                <div class="bike_detail">
+                    <p>Honda H'ness CB350</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cd110-dream.webp"
+                    alt="Honda CD110 Dream" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda CD110 Dream</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-sp-125.webp" alt="Honda SP 125"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda SP 125</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-shine.webp" alt="Honda Shine"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Shine</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-unicorn.webp"
+                    alt="Honda Unicorn" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Unicorn</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-hornet2.0.webp"
+                    alt="Honda Hornet 2.0" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Hornet 2.0</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-livo.webp" alt="Honda Livo"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Livo</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-xblade.webp" alt="Honda Xblade"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Xblade</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cb-350-1797.jpg"
+                    alt="Honda Hness CB350" style="width: 400px; height: 200px;">
+                <div class="bike_detail">
+                    <p>Honda H'ness CB350</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cd110-dream.webp"
+                    alt="Honda CD110 Dream" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda CD110 Dream</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-sp-125.webp" alt="Honda SP 125"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda SP 125</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-shine.webp" alt="Honda Shine"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Shine</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-unicorn.webp"
+                    alt="Honda Unicorn" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Unicorn</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-hornet2.0.webp"
+                    alt="Honda Hornet 2.0" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Hornet 2.0</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-livo.webp" alt="Honda Livo"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Livo</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-xblade.webp" alt="Honda Xblade"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Xblade</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cb-350-1797.jpg"
+                    alt="Honda Hness CB350" style="width: 400px; height: 200px;">
+                <div class="bike_detail">
+                    <p>Honda H'ness CB350</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cd110-dream.webp"
+                    alt="Honda CD110 Dream" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda CD110 Dream</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-sp-125.webp" alt="Honda SP 125"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda SP 125</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-shine.webp" alt="Honda Shine"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Shine</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-unicorn.webp"
+                    alt="Honda Unicorn" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Unicorn</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-hornet2.0.webp"
+                    alt="Honda Hornet 2.0" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Hornet 2.0</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-livo.webp" alt="Honda Livo"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Livo</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-xblade.webp" alt="Honda Xblade"
+                    style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda Xblade</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cb-350-1797.jpg"
+                    alt="Honda Hness CB350" style="width: 400px; height: 200px;">
+                <div class="bike_detail">
+                    <p>Honda H'ness CB350</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
+            <div class="bike_card"><img class="bike-img" src="../../Assets/Images/honda-cd110-dream.webp"
+                    alt="Honda CD110 Dream" style="width: 450px; height: 250px;">
+                <div class="bike_detail">
+                    <p>Honda CD110 Dream</p>
+                    <p>Old Price: ₹ 1.85 Lakh</p>
+                    <p>Now: ₹ 1.59 Lakh</p>
+                    <p>Future Price: ₹ 1.43 Lakh</p>
+                </div>
+            </div>
         </div>
     </main>
 
+    <!-- <img id="dotted_img1" src="../../Assets/Images/best-bike-dotted.png" alt="Image">
+    <img id="dotted_img2" src="../../Assets/Images/best-bike-dotted.png" alt="Image"> -->
 
-<script>
-    // const arrows = document.querySelectorAll(".arrow");
-//     const bike_list = document.querySelectorAll(".movie-list ");
-//    arrows.forEach((arrow, i) => {
-//        let itemNumber = bike_list[i].querySelectorAll("img").length;
-//        let clickCounter = 0;
-//       arrow.addEventListener("click" , () => {
-//             clickCounter++;
-//             if(itemNumber - ( 4 + clickCounter)>= 0){
-//                 bike_list[i].style.transform = `translateX(${
-//             bike_list[i].computedStyleMap().get("transform")[0].x.value
-//             -300}px)`;
-//             }else{
-//                 bike_list[i].style.transform = "translateX(0)";
-//                 clickCounter = 0;
-//             }
-//       });
-//       console.log(bike_list[i].querySelectorAll("img").length);
-//    });
 
-// let arrow=document.getElementById("btn");
-// let bike_list=document.querySelectorAll(".main-container img");
-// let cnt=0;
 
-// bike_list.forEach((i)=>{
-//     i.style.transform=`translateX(-${300}px)`;
-//     console.log(i);
-//     arrow.addEventListener("click",()=>{
+    <!--Footer-->
 
-//         console.log(cnt)
-//         // console.log(`translateX(-${cnt*300}px)`)
-//         bike_list[0].style.transform=`translateX(-${cnt*300}px)`;
-//         cnt++;
 
-        
+    <footer>
+        <div class="foot">
+            <img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png" alt="logo">
+            <p id="follow">Follow us:</p>
+            <a class="footer_a" href="https://www.linkedin.com/in/prasanna-balaji-1835a9251"><img class="icons"
+                    src="../../Assets/Images/linkedin.png" alt="linkedin image"></a>
+            <a class="footer_a"
+                href="https://www.instagram.com/invites/contact/?i=mqxel6l8j6sc&utm_content=keud4xo"><img class="icons"
+                    src="../../Assets/Images/instagram (1).png" alt="instagram image"></a>
+            <a class="footer_a" href="https://mobile.twitter.com/PRaSannaBrokeN"><img class="icons"
+                    src="../../Assets/Images/twitter.png" alt="twitter image"></a>
+            <a class="footer_a" href="https://youtube.com/@user-yr8hg8ij1b"><img class="icons"
+                    src="../../Assets/Images/youtube.png" alt="youtube image"></a>
+            <a class="footer_a" href="https://www.facebook.com/prasanna.balaji.796?mibextid=ZbWKwL"><img class="icons"
+                    src="../../Assets/Images/facebook.png" alt="facebook image"> </a>
+        </div>
+        <hr>
+        <div class="foot1">
+            <p class="copyright">All &copy Rights Reserved by BIKERZ ZONE</p>
+        </div>
+    </footer>
 
-// })
-// })
 
-</script>
-    
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+    <script>
+        // const arrows = document.querySelectorAll(".arrow");
+        //     const bike_list = document.querySelectorAll(".movie-list ");
+        //    arrows.forEach((arrow, i) => {
+        //        let itemNumber = bike_list[i].querySelectorAll("img").length;
+        //        let clickCounter = 0;
+        //       arrow.addEventListener("click" , () => {
+        //             clickCounter++;
+        //             if(itemNumber - ( 4 + clickCounter)>= 0){
+        //                 bike_list[i].style.transform = `translateX(${
+        //             bike_list[i].computedStyleMap().get("transform")[0].x.value
+        //             -300}px)`;
+        //             }else{
+        //                 bike_list[i].style.transform = "translateX(0)";
+        //                 clickCounter = 0;
+        //             }
+        //       });
+        //       console.log(bike_list[i].querySelectorAll("img").length);
+        //    });
+
+        // let arrow=document.getElementById("btn");
+        // let bike_list=document.querySelectorAll(".main-container img");
+        // let cnt=0;
+
+        // bike_list.forEach((i)=>{
+        //     i.style.transform=`translateX(-${300}px)`;
+        //     console.log(i);
+        //     arrow.addEventListener("click",()=>{
+
+        //         console.log(cnt)
+        //         // console.log(`translateX(-${cnt*300}px)`)
+        //         bike_list[0].style.transform=`translateX(-${cnt*300}px)`;
+        //         cnt++;
+
+
+
+        // })
+        // })
+
+        let existingbikes = JSON.parse(localStorage.getItem("product_bikes")) ?? [];
+        getBike("Hero", "")
+        function getBike(brand, model) {
+            $.ajax({
+                method: 'GET',
+                url: `https://api.api-ninjas.com/v1/motorcycles?make=${brand}&model=${model}`,
+                headers: { 'X-Api-Key': 'igSf1NGJferfMcjV30RDyQ==KpFEtoNtsCnn7Qv8' },
+                contentType: 'application/json',
+                success: function (result) {
+                    existingbikes.push(result)
+                    localStorage.setItem("product_bikes" , JSON.stringify(existingbikes));
+                },
+                error: function ajaxError(jqXHR) {
+                    console.error('Error: ', jqXHR.responseText);
+                }
+            });
+        }   
+
+
+        if(!localStorage.getItem("profile_details")){
+            Notify.error("Please Login!!");
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+    </script>
+
 </body>
+
 </html>

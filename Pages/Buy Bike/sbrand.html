@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecting Bike Brand</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
 </head>
 
 <body>
@@ -22,11 +24,14 @@
 
             <div class="options">
                 <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
-                <a class="a1" href="../Sell Bike/sbike-details.html">Sell Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../review.html">Review of Bike</a>
-                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
-                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../About/about_us.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
@@ -42,7 +47,7 @@
 
         <div class="brand-column">
             <div class="row">
-                <a class="brand-card" href="../../Pages/Buy Bike/smodel.html">
+                <!-- <a class="brand-card" href="../../Pages/Buy Bike/smodel.html">
                     <div class="content">
                         <img class="brand-logo" src="../../Assets/Images/yamaha-logo-removebg-preview.png"
                             alt="Yamaha Logo">
@@ -96,10 +101,111 @@
                         <img class="brand-logo" src="../../Assets/Images/ktm-logo-removebg-preview.png" alt="KTM Logo">
                         <h6 class="center">KTM</h6>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+
+    <script>
+
+
+
+        let brands = [
+            {
+                name: "Yamaha",
+                logo: "../../Assets/Images/yamaha-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Hero",
+                logo: "../../Assets/Images/hero-logo.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Suzuki",
+                logo: "../../Assets/Images/suzuki-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "TVS",
+                logo: "../../Assets/Images/tvs-logo.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Royal Enfield",
+                logo: "../../Assets/Images/royalenfield-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Honda",
+                logo: "../../Assets/Images/honda-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "Bajaj",
+                logo: "../../Assets/Images/bajaj-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            },
+            {
+                name: "KTM",
+                logo: "../../Assets/Images/ktm-logo-removebg-preview.png",
+                link: "../../Pages/Buy Bike/smodel.html"
+            }
+        ]
+
+
+
+        for (let i = 0; i < 8; i++) {
+
+            // create anchor element
+            var a = document.createElement("a");
+            a.classList.add("brand-card");
+            a.href = "../../Pages/Buy Bike/smodel.html?name=" + brands[i].name;
+
+            // create div element
+            var div = document.createElement("div");
+            div.classList.add("content");
+
+            // create img element
+            var img = document.createElement("img");
+            img.classList.add("brand-logo");
+            img.src = brands[i]["logo"];
+            img.alt = "Yamaha Logo";
+
+            // create h6 element
+            var h6 = document.createElement("h6");
+            h6.classList.add("center");
+            h6.textContent = brands[i]["name"];
+
+            // append img and h6 to div
+            div.appendChild(img);
+            div.appendChild(h6);
+
+            // append div to anchor
+            a.appendChild(div);
+            document.querySelector(".row").append(a);
+
+        }
+
+        if(!localStorage.getItem("profile_details")){
+            Notify.error("Please Login!!");
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+
+    </script>
+
+
 </body>
 
 </html>

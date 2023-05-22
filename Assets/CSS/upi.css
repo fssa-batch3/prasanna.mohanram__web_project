@@ -1,0 +1,148 @@
+body {
+    color: #333;
+    /* background-color: #eee; */
+    margin: 0;
+}
+
+* {
+    font-size: 24px;
+    font-weight: bold;
+    /* font-family: Russo One; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(135, 135, 135);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 174px;
+    font-family: Russo One;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+a {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.container-upi {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 650px;
+    border: 2px solid rgb(225, 225, 225);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 0px black;
+    width: 30%;
+    margin: 150px auto;
+    margin-top: 250px;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 45%;
+    height: 75px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+#change {
+    color: rgb(68, 202, 255);
+    text-decoration: none;
+}
+
+#upi_logo {
+    width: 55%;
+    height: 30px;
+}
+
+#upi_logo1 {
+    width: 65%;
+    height: 75px;
+}
+
+#other-upi {
+    color: rgb(68, 202, 255);
+    border: 2px solid rgb(68, 202, 255);
+    border-radius: 5px;
+    background-color: white;
+    /* margin-left: 35%; */
+    /* padding: 50px; */
+    width: 95%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+#how {
+    color: rgb(110, 204, 241);
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+#btn {
+    margin: 10px;
+}

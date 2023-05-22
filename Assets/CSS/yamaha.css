@@ -1,31 +1,40 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     font-family: Russo One;
 }
-header{
-    background-color:rgb(0, 0, 0);
+
+header {
+    background-color: rgb(0, 0, 0);
     height: 174px;
 }
-.nav{
+
+.nav {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.options{
+
+.options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
-#logo{
+
+#logo {
     width: 150px;
     height: 150px;
 }
-#logo:hover{
+
+#logo:hover {
     transform: scale(1.2);
 }
-a{
+
+a {
     margin-left: 20px;
     font-size: 16px;
     text-decoration: none;
@@ -33,7 +42,8 @@ a{
     font-weight: bold;
     padding: 10px;
 }
-.a1:hover{
+
+.a1:hover {
     transition: .6s;
     background-color: whitesmoke;
     color: black;
@@ -42,33 +52,39 @@ a{
     padding: 10px;
     box-shadow: 2px 2px 6px 2px black;
 }
-.logo1{
+
+.logo1 {
     height: 50px;
     width: 150px;
     margin-right: 40px;
     margin-top: 4px;
 
 }
-#bikelogo{ 
+
+#bikelogo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-p{
+
+p {
     width: 450px;
     text-shadow: 2px 2px 10px white;
 }
-footer{
+
+footer {
     background-color: black;
     height: 200px;
     margin-top: 0;
 }
-.icons{
+
+.icons {
     margin-top: 20px;
     height: 30px;
     width: 30px;
 }
-.foot{
+
+.foot {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,21 +99,22 @@ footer{
     text-shadow: none;
 }
 
-.copyright{
+.copyright {
     color: whitesmoke;
     text-align: center;
     width: 100%;
 }
-hr{
+
+hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
 }
 
-.main{
+.main {
     display: flex;
 }
 
-.details{
+.details {
     margin-left: 50px;
     display: flex;
     flex-direction: column;
@@ -105,7 +122,7 @@ hr{
     justify-content: center;
 }
 
-.buy{
+.buy {
     position: relative;
     color: greenyellow;
 }
@@ -114,30 +131,29 @@ hr{
     text-shadow: 0 0 10px black;
     border-radius: 10px;
     background:
-      linear-gradient(
-        to right,
-        rgba(255, 0, 180, 1),
-        rgba(210, 180, 100)
-      ),
-      linear-gradient(
-        to right,
-        coral,
-        darkgrey,
-        rgba(0, 100, 200, 1),
-        rgba(255, 0, 180, 1),
-        rgba(255, 0, 0, 1),
-        rgba(210, 180, 100),
-        rgba(10, 80, 1)
-    );
+        linear-gradient(to right,
+            rgba(255, 0, 180, 1),
+            rgba(210, 180, 100)),
+        linear-gradient(to right,
+            coral,
+            darkgrey,
+            rgba(0, 100, 200, 1),
+            rgba(255, 0, 180, 1),
+            rgba(255, 0, 0, 1),
+            rgba(210, 180, 100),
+            rgba(10, 80, 1));
     background-size: 100% 500px, 0 250px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 1000ms;
 }
 
-  .buy:hover {
+.buy:hover {
     background-size: 0 3px, 100% 3px;
     border-radius: 0;
-  }
+}
 
-
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}

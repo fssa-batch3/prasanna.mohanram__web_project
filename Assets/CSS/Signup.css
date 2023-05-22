@@ -1,17 +1,60 @@
 html {
+  scroll-behavior: smooth;
   height: 100%;
 }
 
 body {
   margin: 0;
+  font-family: "Russo One", sans-serif;
   padding: 0;
-  font-family: sans-serif;
   background: linear-gradient(rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  height: 174px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.options {
+  width: 100%;
+  margin-left: 325px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+a {
+  margin-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.a1:hover {
+  transition: .6s;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 6px 2px black;
 }
 
 .signup {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 400px;
   padding: 40px;
@@ -67,7 +110,7 @@ body {
 .signup .inputs input:invalid~label {
   width: 100%;
   color: red;
-} 
+}
 
 .signup form a {
   position: relative;
@@ -91,7 +134,7 @@ body {
   box-shadow: 0 0 5px #28dfff, 0 0 25px #28dfff, 0 0 50px #28dfff, 0 0 100px #28dfff;
 }
 
-#alr-acc{
+#alr-acc {
   letter-spacing: 0;
   text-align: center;
   color: dimgray;
@@ -100,7 +143,7 @@ body {
   margin-bottom: 0;
 }
 
-#alr-acc:hover{
+#alr-acc:hover {
   color: lightgray;
   background: none;
   box-shadow: none;
@@ -130,4 +173,9 @@ body {
   box-shadow: 0 0 5px #28dfff, 0 0 25px #28dfff, 0 0 50px #28dfff, 0 0 100px #28dfff;
   background-color: #28dfff;
   border: none;
+}
+
+#profile {
+  background-color: white;
+  border-radius: 50%;
 }

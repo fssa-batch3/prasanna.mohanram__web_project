@@ -1,5 +1,59 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    font-family: "Russo One", sans-serif;
+    padding: 0;
     background-color: #f9f9fa;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 174px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    /* margin-left: 650px; */
+    margin-top: -200px;
+    margin-left: 600px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.a1 {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+    text-decoration: none;
 }
 
 .padding {
@@ -51,8 +105,6 @@ body {
 .img-radius {
     border-radius: 5px;
 }
-
-
 
 h6 {
     font-size: 14px;
@@ -137,7 +189,7 @@ h6 {
 
 .logout {
     margin-left: 10%;
-    color: dodgerblue;
+    /* color: dodgerblue; */
     text-decoration: none;
     /* background-color: deepskyblue; */
     padding: 2px;
@@ -145,10 +197,14 @@ h6 {
 }
 
 .logout:hover {
-    color: dodgerblue;
+    color: red;
     text-decoration: none;
     background-color: #00000008;
     box-shadow: 0px 0px 3px black;
+}
+
+#save:hover {
+    color: green;
 }
 
 input {
@@ -158,4 +214,13 @@ input {
 
 #line {
     text-decoration: underline #919aa375;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}
+
+#email {
+    width: 100%;
 }

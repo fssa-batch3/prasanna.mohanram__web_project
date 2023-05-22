@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order History</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Effect</title>
 </head>
+<style>
+  .story {
+  animation: typewriter 4s steps(40) 1s forwards;
+  white-space: wrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+</style>
 <body>
-    
+  <p id="story" class="story"></p>
+
 </body>
+<script>
+  const text = `Our team started in the web hosting industry. After a few years, we discovered there were too many challenges to making a website. Traditional web hosting services were complicated and expensive to manage. A need for simplicity, the Website.com site builder was born. We wanted to offer a website building platform that would require no coding skills or design experience, with everything needed to get published online. You can simply focus on creating an amazing website that reflects your brand.
+  
+  After seeing an increased need for ecommerce solutions, we developed one of the only fully-featured, free and commission-free online store builders. As our global userbase grew, we expanded our editor with the ability to make multilingual websites.`;
+  
+  let index = 0;
+  const storyElement = document.getElementById("story");
+  
+  function type() {
+    if (index < text.length) {
+      storyElement.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 50);
+    }
+  }
+  
+  type();
+  
+</script>
 </html>

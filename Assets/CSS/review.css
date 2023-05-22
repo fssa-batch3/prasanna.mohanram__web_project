@@ -5,8 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Russo One;
-    background: url(../Images/AbandonedWeightyBactrian-size_restricted.gif);
-    background-size: cover;
+    background-color: aliceblue;
 }
 
 header {
@@ -22,7 +21,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -140,4 +141,213 @@ footer {
 hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.main_container {
+    font-family: Mogra, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.review_main_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* overflow: hidden; */
+    /* justify-content: center;
+    width: 20%;
+    align-items: center;
+    padding: 20px;
+  */
+}
+
+.content_of_reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.review_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px);
+    }
+
+    20% {
+        transform: translate(-450px);
+    }
+
+    40% {
+        transform: translate(-900px);
+    }
+
+    60% {
+        transform: translate(-1350px);
+    }
+
+    /* 80% {
+        transform: translate(-900px);
+    } */
+
+    100% {
+        transform: translate(0px);
+    }
+
+    /* 110% {
+        transform: translate(0px);
+    } */
+}
+
+#user_review {
+    color: rgba(0, 0, 0, 0.696);
+}
+
+#bike_gif {
+    width: 90px;
+    height: 70px;
+    margin-left: -220px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_name {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_img {
+    width: 70px;
+    height: 70px;
+    padding-right: 30px;
+}
+
+#love {
+    text-align: center;
+    margin: 0;
+    color: red;
+    font-size: 20px;
+    text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, #720b2d, 94%),
+		0.005em 0.005em 0 mix(#fff, #e91e63, 60%),
+		0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 
+		0.015em 0.015em mix(#fff, #e91e63, 64%), 
+		0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 
+		0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+		0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+		0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+}
+
+#brand_name {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+#div_honda {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+#brand_name_honda {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+#user_review {
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.review_content_honda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(14, 14, 14);
+    border-radius: 5px;
+    animation-name: right;
+    animation-duration: 20s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes right {
+    0% {
+        transform: translate(0px);
+    }
+
+    20% {
+        transform: translate(450px);
+    }
+
+    40% {
+        transform: translate(900px);
+    }
+
+    60% {
+        transform: translate(1350px);
+    }
+
+    /* 80% {
+        transform: translate(-900px);
+    } */
+
+    100% {
+        transform: translate(0px);
+    }
+
+    /* 110% {
+        transform: translate(0px);
+    } */
+}
+
+.user_name_honda {
+    color: white;
+}
+
+#user_review_honda {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.review_main_container_hero {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

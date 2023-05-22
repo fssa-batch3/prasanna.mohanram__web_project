@@ -10,11 +10,35 @@
 </head>
 
 <body>
+
+
+
+   <!--Navigations-->
+   <header>
+      <div class="nav">
+         <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
+               alt="logo"></a>
+
+         <div class="options">
+            <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
+            <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
+            <a class="a1" href="../review.html">Review of Bike</a>
+            <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+            <a class="a1" href="../About/about_us.html">About</a>
+            <a class="a1" href="../Account/signup.html">Signup/login</a>
+            <a href="../../Pages/Account/profile.html"><img id="profile"
+                  src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png" alt="profile_nav_img"></a>
+         </div>
+      </div>
+   </header>
+
+
    <div class="signup">
       <h2>Sign Up</h2>
-      <form action="login.html">
+      <form id="signup">
          <div class="inputs">
-            <input type="text" id="username" title="Name doesn't contain number or spaces" required="true">
+            <input type="text" id="username" pattern="[A-Za-z]+" title="Name doesn't contain number or spaces"
+               required="true">
             <label for="username">Username</label>
          </div>
          <div class="inputs">
@@ -23,7 +47,7 @@
             <label for="ph_no">Phone Number</label>
          </div>
          <div class="inputs">
-            <input type="email" id="email" title="Email doesn't contain caps or spaces" required="true">
+            <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" title="Email doesn't contain caps or spaces" required="true">
             <label for="email">Email</label>
          </div>
          <div class="inputs">
@@ -36,7 +60,7 @@
                title="Confirm Password doesn't contain spaces" required="true">
             <label for="conf-password">Confirm Password</label>
          </div>
-         <button id="sign-up" onclick="signup()"> Sign Up </button>
+         <button id="sign-up"> Sign Up </button>
          <a id="alr-acc" href="../../Pages/Account/login.html"> Already Have a Account?</a>
 
       </form>
@@ -45,9 +69,11 @@
 
 
    <script>
-
-
-
+      let signupform = document.getElementById("signup")
+      signupform.addEventListener("submit", e => {
+         e.preventDefault();
+         signup()
+      })
       function signup() {
 
          let username = document.getElementById("username").value;
@@ -91,7 +117,8 @@
          else {
             array1.push(user);
             localStorage.setItem("user_signup_list", JSON.stringify(array1))
-            alert("Ulla ponga bro")
+            alert("Successfully created account")
+            window.location.href = "login.html"
          }
 
       }

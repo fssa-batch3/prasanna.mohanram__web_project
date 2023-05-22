@@ -5,8 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Russo One;
-    background: url(../Images/background\ star.gif);
-    background-size: cover;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -23,7 +22,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -133,35 +134,20 @@ hr {
     margin: 100px 0px;
 }
 
-.R15 {
+.R15,.MT,.FZX {
     width: 400px;
     height: 310px;
     border: 1px solid grey;
     border-radius: 10px;
-    box-shadow: 0 0 10px 10px rgb(255, 208, 55);
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0);
 }
 
-.MT {
-    width: 450px;
-    height: 310px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 10px rgb(255, 208, 55);
-}
 
-.FZX{
-    background-color: white;
-    width: 400px;
-    height: 310px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 10px rgb(255, 208, 55);
-}
 
 .R15:hover,
 .MT:hover,
 .FZX:hover {
-    box-shadow: 0 0 10px 10px lightseagreen;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.438);
 }
 
 .prices {
@@ -171,16 +157,14 @@ hr {
     margin: 100px 0px;
 }
 
-.first {
-    border-top: 3px solid grey;
-    border-left: 3px solid lightcoral;
-    border-bottom: 3px solid goldenrod;
-    border-right: 3px solid palegreen;
+.first, .second, .third {
+    border: 1px solid black;
+    border-radius: 5px;
     width: 400px;
-    box-shadow: 0 0 10px 10px lightyellow;
+    box-shadow: 0 0 1px 1px lightyellow;
 }
 
-.second {
+/* .second {
     margin-left: 30px;
     border-top: 3px solid grey;
     border-left: 3px solid lightcoral;
@@ -188,12 +172,12 @@ hr {
     border-right: 3px solid palegreen;
     width: 400px;
     box-shadow: 0 0 10px 10px lightyellow;
-}
+} */
 
 .first:hover,
 .second:hover,
 .third:hover {
-    box-shadow: 0 0 10px 10px lightcyan;
+    box-shadow: 0 0 2px 2px lightcyan;
 }
 
 .old {
@@ -217,5 +201,10 @@ p {
 
 h3 {
     text-align: center;
-    text-shadow:  0 0 5px lime, 0 0 25px #3e85ff, 0 0 50px #3e85ff, 0 0 100px #3e85ff;
+    /* text-shadow:  0 0 5px lime, 0 0 25px #3e85ff, 0 0 50px #3e85ff, 0 0 100px #3e85ff; */
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

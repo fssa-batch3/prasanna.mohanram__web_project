@@ -22,7 +22,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -149,4 +151,9 @@ h1 {
     width: 104px;
     margin-top: 35px;
     text-shadow: none;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

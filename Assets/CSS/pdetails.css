@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgb(92, 92, 92, 0.7), rgb(92, 92, 92, 0.7)), url(../Images/raining-money-8.gif);
+    background: rgba(0,0,0,0.5);
     background-size: cover;
     background-position-y: 160px;
     background-repeat: no-repeat;
@@ -24,7 +24,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -78,6 +80,22 @@ a {
 
 input[type=text] {
     width: 95%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#city {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#state {
+    width: 100%;
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;
@@ -189,4 +207,9 @@ h3{
     width: 104px;
     margin-top: 35px;
     text-shadow: none;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

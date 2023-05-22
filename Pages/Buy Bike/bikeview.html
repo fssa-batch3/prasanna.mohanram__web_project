@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View of Bike</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
 </head>
 
 <body>
@@ -22,19 +24,22 @@
 
             <div class="options">
                 <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
-                <a class="a1" href="../Sell Bike/sbike-details.html">Sell Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
                 <a class="a1" href="../review.html">Review of Bike</a>
-                <a class="a1" href="../Price List/price.html">Price List of Bike</a>
-                <a class="a1" href="../About/About.html">About</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../About/about_us.html">About</a>
                 <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
             </div>
         </div>
     </header>
 
 
     <main>
-        <div class="container-main">
-            <div>
+        <!-- <div class="container-main"> -->
+        <!-- <div>
                 <img id="main-img" src="../../Assets/Images/yamahaR15-blue" alt="Yamaha-R15-Blue">
             </div>
             <div class="side-content">
@@ -155,18 +160,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
-        <h1>Video</h1>
-        <p id="vid-des"> In this video <br> Yamaha R15 v3 Bs6 Racing Blue Full Walkaround & First Look
-        </p>
 
-        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/zZawsJj3My0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
 
     </main>
+
+
+    <h1>Video</h1>
+    <p id="vid-des"> In this video <br> Yamaha R15 v3 Bs6 Racing Blue Full Walkaround & First Look
+    </p>
+
+    <iframe id="vid" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
 
     <!--Footer-->
 
@@ -192,6 +200,388 @@
         </div>
     </footer>
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+
+    <script>
+
+
+
+        let product_details = JSON.parse(localStorage.getItem("Product_details"));
+
+
+        const url = window.location.search;
+        const urlparams = new URLSearchParams(url);
+        const resultsearch = urlparams.get("prod_id");
+
+
+        let showedItem;
+        let productbikes = JSON.parse(localStorage.getItem("Product_details"));
+
+        productbikes.find((item) => {
+            if (resultsearch == item["product_id"]) {
+                return showedItem = item;
+            }
+            else {
+                return showedItem = 0;
+            }
+        });
+
+        console.log(showedItem);
+
+        const containerMain = document.createElement('div');
+        containerMain.classList.add('container-main');
+
+        const imgDiv = document.createElement('div');
+        const img = document.createElement('img');
+        img.id = 'main-img';
+        img.setAttribute("src", showedItem["bike-picture1"]);
+        img.alt = "Bike Img";
+        imgDiv.appendChild(img);
+
+        const sideContent = document.createElement('div');
+        sideContent.classList.add('side-content');
+
+        const heading = document.createElement('h2');
+        const title = document.createTextNode(showedItem["Bike_brand"]);
+        const lineBreak = document.createElement('br');
+        const span = document.createElement('span');
+        span.id = 'RB';
+        span.textContent = showedItem["Bike-color"];
+        heading.appendChild(title);
+        heading.appendChild(lineBreak);
+        heading.appendChild(span);
+
+        const description = document.createElement('p');
+        description.id = 'description';
+        description.textContent = showedItem["other-details"]
+        const details = document.createElement('div');
+        details.classList.add('details');
+
+        const engine = document.createElement('div');
+        const engineHeading = document.createElement('h3');
+        engineHeading.textContent = showedItem["Bike-engine"];
+        const engineSpec = document.createElement('p');
+        engineSpec.classList.add('specification');
+        engineSpec.textContent = 'Engine';
+        engine.appendChild(engineHeading);
+        engine.appendChild(engineSpec);
+
+        const maxPower = document.createElement('div');
+        const maxPowerHeading = document.createElement('h3');
+        maxPowerHeading.textContent = showedItem["Bike-maxpower"];
+        const maxPowerSpec = document.createElement('p');
+        maxPowerSpec.classList.add('specification');
+        maxPowerSpec.textContent = 'Max Power';
+        maxPower.appendChild(maxPowerHeading);
+        maxPower.appendChild(maxPowerSpec);
+
+        const weight = document.createElement('div');
+        const weightHeading = document.createElement('h3');
+        weightHeading.textContent = showedItem["Bike-weight"];
+        const weightSpec = document.createElement('p');
+        weightSpec.classList.add('specification');
+        weightSpec.textContent = 'Weight';
+        weight.appendChild(weightHeading);
+        weight.appendChild(weightSpec);
+
+        details.appendChild(engine);
+        details.appendChild(maxPower);
+        details.appendChild(weight);
+
+        const buyNowBtn = document.createElement('button');
+        buyNowBtn.classList.add('btn');
+        buyNowBtn.textContent = 'Buy Now';
+        buyNowBtn.onclick = ()=>{
+            window.location.href = "../Payment/pdetails.html";
+        };
+
+        const editBtn = document.createElement('button');
+        editBtn.classList.add('ebtn');
+        editBtn.setAttribute("onclick", `gotoeditpage(${resultsearch})`);
+        editBtn.textContent = 'Edit Bike';
+
+        sideContent.appendChild(heading);
+        sideContent.appendChild(description);
+        sideContent.appendChild(details);
+        sideContent.appendChild(document.createElement('br'));
+        sideContent.appendChild(document.createElement('br'));
+        sideContent.appendChild(buyNowBtn);
+        sideContent.appendChild(editBtn);
+
+        containerMain.appendChild(imgDiv);
+        containerMain.appendChild(sideContent);
+
+        const variantsHeading = document.createElement('h1');
+        variantsHeading.textContent = 'Varients of ';
+        const variantsLineBreak = document.createElement('br');
+        const variantsText = document.createTextNode(showedItem["Bike_brand"]);
+        variantsHeading.appendChild(variantsLineBreak);
+        variantsHeading.appendChild(variantsText);
+
+
+
+        const variantColors = document.createElement('h6');
+        variantColors.textContent = showedItem["Bike_brand"] + ' is available in 4 colour options:';
+        const racingBlue = document.createElement('span');
+        racingBlue.id = 'Rblue';
+        racingBlue.textContent = 'Racing Blue,';
+        const darknightBlack = document.createElement('span');
+        darknightBlack.id = 'Dblack';
+        darknightBlack.textContent = 'Darknight Black,';
+        const metallicRed = document.createElement('span');
+        metallicRed.id = 'Mred';
+        metallicRed.textContent = 'Metallic Red,';
+        const thunderGrey = document.createElement('span');
+        thunderGrey.id = 'Tgrey';
+        thunderGrey.textContent = 'Thunder Grey';
+        variantColors.appendChild(document.createElement('br'));
+        variantColors.appendChild(racingBlue);
+        variantColors.appendChild(document.createTextNode(' '));
+        variantColors.appendChild(darknightBlack);
+        variantColors.appendChild(metallicRed);
+        variantColors.appendChild(thunderGrey);
+
+
+
+
+
+
+        document.querySelector("main").append(containerMain)
+        document.querySelector("main").append(variantsHeading)
+        document.querySelector("main").append(variantColors)
+
+
+
+        const container2 = document.createElement('div');
+        container2.classList.add('container-2');
+        document.querySelector("main").append(container2);
+
+        const bikeCards = [
+            {
+                imgSrc: '../../Assets/Images/yamahaR15-blue',
+                imgAlt: 'Yamaha-R15-Blue',
+                title: 'Yamaha R15 Racing Blue',
+                ratingSrc: '../../Assets/Images/Star-rating.png',
+                ratingAlt: 'Star-rating',
+                price: 'RS. 1.42 Lakh'
+            },
+            {
+                imgSrc: '../../Assets/Images/yamaha-r15-v30-darknight.png',
+                imgAlt: 'Yamaha-R15-Black',
+                title: 'Yamaha R15 Darknight Black',
+                ratingSrc: '../../Assets/Images/Star-rating.png',
+                ratingAlt: 'Star-rating',
+                price: 'RS. 1.60 Lakh'
+            },
+            {
+                imgSrc: '../../Assets/Images/yamaha-r15-v30-red.png',
+                imgAlt: 'Yamaha-R15-Red',
+                title: 'Yamaha R15 Metallic Red',
+                ratingSrc: '../../Assets/Images/Star-rating.png',
+                ratingAlt: 'Star-rating',
+                price: 'RS. 1.58 Lakh'
+            },
+            {
+                imgSrc: '../../Assets/Images/yamaha-r15-v30-thunder-grey.png',
+                imgAlt: 'Yamaha-R15-Grey',
+                title: 'Yamaha R15 Thunder Grey',
+                ratingSrc: '../../Assets/Images/Star-rating.png',
+                ratingAlt: 'Star-rating',
+                price: 'RS. 1.57 Lakh'
+            }
+        ];
+
+        bikeCards.forEach((bike) => {
+            const cardLink = document.createElement('a');
+            cardLink.href = '';
+
+            const bikeCard = document.createElement('div');
+            bikeCard.classList.add('bike-card');
+
+            const img = document.createElement('img');
+            img.classList.add('sug-img');
+            img.src = bike.imgSrc;
+            img.alt = bike.imgAlt;
+            bikeCard.appendChild(img);
+
+            const title = document.createElement('h4');
+            title.textContent = bike.title;
+            bikeCard.appendChild(title);
+
+            const rating = document.createElement('img');
+            rating.classList.add('rating');
+            rating.src = bike.ratingSrc;
+            rating.alt = bike.ratingAlt;
+            bikeCard.appendChild(rating);
+
+            const price = document.createElement('p');
+            price.textContent = bike.price;
+            bikeCard.appendChild(price);
+
+            cardLink.appendChild(bikeCard);
+            container2.appendChild(cardLink);
+        });
+
+        const h1_feature = document.createElement('h1');
+        h1_feature.innerText = "Feature of " + showedItem["Bike_brand"];
+        document.querySelector("main").appendChild(h1_feature);
+
+
+        const feature = document.createElement('div');
+        feature.classList.add('feature');
+
+        const leftDiv = document.createElement('div');
+        const content1 = [
+            {
+                title: 'Mileage',
+                value: showedItem["Bike-mileage"],
+                iconSrc: '../../Assets/Images/mileage.jpg',
+                iconAlt: 'Mileage'
+            },
+            {
+                title: 'Power',
+                value: showedItem["Bike-power"],
+                iconSrc: '../../Assets/Images/power.png',
+                iconAlt: 'Power'
+            },
+            {
+                title: 'Transmission',
+                value: showedItem["Bike-transmission"],
+                iconSrc: '../../Assets/Images/transmission.jpg',
+                iconAlt: 'Transmission'
+            }
+        ];
+
+        content1.forEach((content) => {
+            const contentDiv = document.createElement('div');
+            contentDiv.setAttribute("class", "div-main-left");
+
+            const title = document.createElement('h5');
+            title.textContent = content.title;
+            contentDiv.appendChild(title);
+
+            const div_inside = document.createElement('div');
+            div_inside.setAttribute("class", "inside");
+
+            contentDiv.appendChild(div_inside);
+
+            const value = document.createElement('p');
+            value.textContent = content.value;
+            div_inside.appendChild(value);
+
+            const icon = document.createElement('img');
+            icon.classList.add('icon');
+            icon.src = content.iconSrc;
+            icon.alt = content.iconAlt;
+
+            div_inside.appendChild(icon);
+
+            leftDiv.appendChild(contentDiv);
+        });
+
+
+
+
+
+
+
+        let img1 = document.createElement("img");
+        img1.setAttribute("id", "bike-front");
+        img1.setAttribute("src", showedItem["bike-picture2"]);
+
+
+
+        const rightDiv = document.createElement('div');
+        const content2 = [
+            {
+                title: 'Engine',
+                value: showedItem["Bike-engine"],
+                iconSrc: '../../Assets/Images/engine-removebg-preview.png',
+                iconAlt: 'Engine'
+            },
+            {
+                title: 'Fuel Capacity',
+                value: showedItem["Bike-fuel"],
+                iconSrc: '../../Assets/Images/fuel.png',
+                iconAlt: 'Fuel Capacity'
+            },
+            {
+                title: 'Torque',
+                value: showedItem["Bike-torque"],
+                iconSrc: '../../Assets/Images/torque.jpg',
+                iconAlt: 'Torque'
+            }
+        ];
+
+        content2.forEach((content) => {
+            const contentDiv = document.createElement('div');
+            contentDiv.setAttribute("class", "div-main-right");
+
+            const title = document.createElement('h5');
+            title.textContent = content.title;
+            contentDiv.appendChild(title);
+
+            const div_inside2 = document.createElement('div');
+            div_inside2.setAttribute("class", "inside1");
+            contentDiv.appendChild(div_inside2);
+
+            const value = document.createElement('p');
+            value.textContent = content.value;
+            div_inside2.appendChild(value);
+
+            const icon = document.createElement('img');
+            icon.classList.add('icon');
+            icon.src = content.iconSrc;
+            icon.alt = content.iconAlt;
+            div_inside2.appendChild(icon);
+
+            rightDiv.appendChild(contentDiv);
+        });
+
+        feature.appendChild(leftDiv);
+        feature.append(img1)
+
+        feature.appendChild(rightDiv);
+        document.querySelector("main").append(feature);
+
+
+        function gotoeditpage(proid) {
+
+            let href = "../Account/editprod.html?editid=" + proid;
+            window.location.href = href;
+        }
+
+
+        let bikeVideo = document.getElementById("vid")
+        bikeVideo.setAttribute("src", showedItem["Bike-video"])
+        bikeVideo.style.width = "560px";
+        bikeVideo.style.height = "315px";
+
+        let vid_name = document.getElementById("vid-des");
+        vid_name.innerHTML = " In this video " + showedItem["Bike-model"] + " " + showedItem["Bike-color"] + " Full Walkaround & First Look ";
+
+
+
+        if(!localStorage.getItem("profile_details")){
+            Notify.error("Please Login!!");
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+    </script>
+
+
+
+
+
 </body>
+
 
 </html>

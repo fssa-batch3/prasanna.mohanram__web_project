@@ -22,7 +22,9 @@ header {
 
 .options {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 325px;
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -93,7 +95,7 @@ input {
     border: none;
     border-bottom: 3px solid rgb(126, 185, 175);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* label{
@@ -116,14 +118,14 @@ input:focus {
     transition: 1s;
 }
 
-#complete {
+#continue {
     margin-left: 200px;
     background-color: gray;
     border: 2px solid darkcyan;
     border-radius: 10px;
 }
 
-#complete:hover {
+#continue:hover {
     border: none;
     background-color: greenyellow;
     color: rgb(0, 0, 0);
@@ -177,4 +179,9 @@ footer {
 hr {
     border-top: 1px solid gray;
     border-bottom: 1px solid black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
 }

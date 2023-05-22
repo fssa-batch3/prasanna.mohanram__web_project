@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/CSS/editprod.css">
+    <title>Edit product details</title>
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" /> -->
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="nav">
+            <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
+                    alt="logo"></a>
+
+            <div class="options">
+                <a class="a1" href="../Buy Bike/sbrand.html">Buy Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
+                <a class="a1" href="../review.html">Review of Bike</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../About/about_us.html">About</a>
+                <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="uk-container">
+        <div uk-grid>
+            <div id="main-div" class="uk-width-1-2">
+                <div id="main-div" class='uk-width-1-1@s'>
+                    <h2 class="uk-text-center">Product Details</h2>
+                    <hr />
+                    <div class="uk-width-1-1@s">
+                        <label class="uk-form-label" for="txtModel">Bike Model</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtModel" type="text" placeholder="Yamaha RX100" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1@s">
+                        <label class="uk-form-label" for="txtColor">Bike Color</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtColor" type="text" placeholder="Matte Black" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtBrand">Bike Brand</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtBrand" type="text" placeholder="Yamaha" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtDetails">Bike Details</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" id="txtDetails" disabled></textarea>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtEngine">Engine</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtEngine" type="text" placeholder="100 CC" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtMaxpower">Max Power</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtMaxpower" type="text" placeholder="197.2 bhp" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtWeight">Weight</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtWeight" type="text" placeholder="103 Kg" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtMileage">Mileage</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtMileage" type="text" placeholder="40 kmpl" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtPower">Power</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtPower" type="text" placeholder="11 PS @ 7500 rpm" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtTransmission">Transmission</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtTransmission" type="text" placeholder="Manual" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtFuel">Fuel Capacity</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtFuel" type="text" placeholder="10.5 L" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtTorque">Torque</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtTorque" type="text" placeholder="10.39 Nm @ 6500 rpm"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtVideo">Video URL</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtVideo" type="text"
+                                placeholder="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTnWZh5OCaU5wSzMG10r5JasV1iOaWcxeKi4g"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtLocation">Location</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtLocation" type="text" placeholder="Chennai" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtPrice">Price</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtPrice" type="text" placeholder="Rs. 1.00 Lakh" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtOwnership">Ownership</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtOwnership" type="text" placeholder="Second" disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtImageurl1">Bike Image URL 1</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtImageurl1" type="text"
+                                placeholder="https://media.zigcdn.com/media/content/2020/Jul/cc035cfc0c23693bac03c1e8d5ecc9d7_720x540.jpg"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtImageurl2">Bike Image URL 2</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtImageurl2" type="text"
+                                placeholder="https://i.pinimg.com/originals/11/6a/38/116a380bccc0fc03896fd8b6040d720a.jpg"
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="txtImageurl3">Bike Image URL 3</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="txtImageurl3" type="text"
+                                placeholder="https://5.imimg.com/data5/ANDROID/Default/2022/12/RJ/EP/BN/181166314/product-jpeg-500x500.jpg"
+                                disabled>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" id="save" role="button" onclick="save()">Save</button>
+                <button class="btn" id="edit" role="button" onclick="edit()">Edit</button>
+                <button class="btn" id="delete" role="button" onclick="deleteProd()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+    <script>
+
+
+        const url = window.location.search;
+        const urlparams = new URLSearchParams(url);
+        const resultsearch = urlparams.get("editid");
+
+        let product_details = JSON.parse(localStorage.getItem("Product_details"));
+        let curr_index;
+
+        product_details.find(function (obj) {
+
+            if (resultsearch == obj.product_id) {
+
+                console.log(obj)
+
+                document.getElementById("txtModel").value = obj["Bike-model"];
+                document.getElementById("txtColor").value = obj["Bike-color"];
+                document.getElementById("txtBrand").value = obj["Bike_brand"];
+                document.getElementById("txtDetails").value = obj["other-details"];
+                document.getElementById("txtEngine").value = obj["Bike-engine"];
+                document.getElementById("txtMaxpower").value = obj["Bike-maxpower"];
+                document.getElementById("txtWeight").value = obj["Bike-weight"];
+                document.getElementById("txtMileage").value = obj["Bike-mileage"];
+                document.getElementById("txtPower").value = obj["Bike-power"];
+                document.getElementById("txtTransmission").value = obj["Bike-transmission"];
+                document.getElementById("txtFuel").value = obj["Bike-fuel"];
+                document.getElementById("txtTorque").value = obj["Bike-torque"];
+                document.getElementById("txtVideo").value = obj["Bike-video"];
+                document.getElementById("txtLocation").value = obj["location"];
+                document.getElementById("txtPrice").value = obj["Bike-price"];
+                document.getElementById("txtOwnership").value = obj["ownership"];
+                document.getElementById("txtImageurl1").value = obj["bike-picture1"];
+                document.getElementById("txtImageurl2").value = obj["bike-picture2"];
+                document.getElementById("txtImageurl3").value = obj["bike-picture3"];
+                return curr_index = obj;
+            }
+        });
+
+
+
+
+        function edit() {
+            document.getElementById("txtModel").disabled = false;
+            document.getElementById("txtColor").disabled = false;
+            document.getElementById("txtBrand").disabled = false;
+            document.getElementById("txtDetails").disabled = false;
+            document.getElementById("txtEngine").disabled = false;
+            document.getElementById("txtMaxpower").disabled = false;
+            document.getElementById("txtWeight").disabled = false;
+            document.getElementById("txtMileage").disabled = false;
+            document.getElementById("txtPower").disabled = false;
+            document.getElementById("txtTransmission").disabled = false;
+            document.getElementById("txtFuel").disabled = false;
+            document.getElementById("txtTorque").disabled = false;
+            document.getElementById("txtVideo").disabled = false;
+            document.getElementById("txtLocation").disabled = false;
+            document.getElementById("txtPrice").disabled = false;
+            document.getElementById("txtOwnership").disabled = false;
+            document.getElementById("txtImageurl1").disabled = false;
+            document.getElementById("txtImageurl2").disabled = false;
+            document.getElementById("txtImageurl3").disabled = false;
+        }
+
+
+        function save(e) {
+            document.getElementById("txtModel").disabled = true;
+            document.getElementById("txtColor").disabled = true;
+            document.getElementById("txtBrand").disabled = true;
+            document.getElementById("txtDetails").disabled = true;
+            document.getElementById("txtEngine").disabled = true;
+            document.getElementById("txtMaxpower").disabled = true;
+            document.getElementById("txtWeight").disabled = true;
+            document.getElementById("txtMileage").disabled = true;
+            document.getElementById("txtPower").disabled = true;
+            document.getElementById("txtTransmission").disabled = true;
+            document.getElementById("txtFuel").disabled = true;
+            document.getElementById("txtTorque").disabled = true;
+            document.getElementById("txtVideo").disabled = true;
+            document.getElementById("txtLocation").disabled = true;
+            document.getElementById("txtPrice").disabled = true;
+            document.getElementById("txtOwnership").disabled = true;
+            document.getElementById("txtImageurl1").disabled = true;
+            document.getElementById("txtImageurl2").disabled = true;
+            document.getElementById("txtImageurl3").disabled = true;
+
+
+
+
+            let new_bike_model = document.getElementById("txtModel").value;
+            let new_bike_color = document.getElementById("txtColor").value;
+            let new_bike_brand = document.getElementById("txtBrand").value;
+            let new_bike_details = document.getElementById("txtDetails").value;
+            let new_bike_engine = document.getElementById("txtEngine").value;
+            let new_bike_maxpower = document.getElementById("txtMaxpower").value;
+            let new_bike_weight = document.getElementById("txtWeight").value;
+            let new_bike_mileage = document.getElementById("txtMileage").value;
+            let new_bike_power = document.getElementById("txtPower").value;
+            let new_bike_transmission = document.getElementById("txtTransmission").value;
+            let new_bike_fuel = document.getElementById("txtFuel").value;
+            let new_bike_torque = document.getElementById("txtTorque").value;
+            let new_bike_video = document.getElementById("txtVideo").value;
+            let new_bike_location = document.getElementById("txtLocation").value;
+            let new_bike_price = document.getElementById("txtPrice").value;
+            let new_bike_ownership = document.getElementById("txtOwnership").value;
+            let new_bike_imageurl1 = document.getElementById("txtImageurl1").value;
+            let new_bike_imageurl2 = document.getElementById("txtImageurl2").value;
+            let new_bike_imageurl3 = document.getElementById("txtImageurl3").value;
+
+
+            let new_details = {
+                "product_id": resultsearch,
+                "Bike-model": new_bike_model,
+                "Bike-color": new_bike_color,
+                "Bike_brand": new_bike_brand,
+                "other-details": new_bike_details,
+                "Bike-engine": new_bike_engine,
+                "Bike-maxpower": new_bike_maxpower,
+                "Bike-weight": new_bike_weight,
+                "Bike-mileage": new_bike_mileage,
+                "Bike-power": new_bike_power,
+                "Bike-transmission": new_bike_transmission,
+                "Bike-fuel": new_bike_fuel,
+                "Bike-torque": new_bike_torque,
+                "Bike-video": new_bike_video,
+                "location": new_bike_location,
+                "Bike-price": new_bike_price,
+                "ownership": new_bike_ownership,
+                "bike-picture1": new_bike_imageurl1,
+                "bike-picture2": new_bike_imageurl2,
+                "bike-picture3": new_bike_imageurl3
+
+            }
+
+            let Product_details = JSON.parse(localStorage.getItem("Product_details"));
+            Product_details.forEach((e, index) => {
+                if (resultsearch == e["product_id"]) {
+                    Product_details[index] = new_details;
+                }
+            });
+
+            localStorage.setItem("Product_details", JSON.stringify(Product_details));
+            console.log(resultsearch)
+            // e.preventDefault()
+            window.location.href = "../Buy Bike/bikeview.html?prod_id=" + resultsearch;
+
+
+        }
+
+
+        function deleteProd() {
+
+
+            let Product_details = JSON.parse(localStorage.getItem("Product_details"));
+            Product_details.forEach((e, index) => {
+                if (resultsearch == e["product_id"]) {
+                    Product_details[index]["status"] = false;
+                }
+            });
+            localStorage.setItem("Product_details", JSON.stringify(Product_details));
+            window.location.href = "../Buy Bike/smodel.html?name=" + curr_index["Bike_brand"];
+
+
+        }
+
+
+        if(!localStorage.getItem("profile_details")){
+            Notify.error("Please Login!!");
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "Pages/Account/login.html";
+        }
+
+        
+    </script>
+
+
+</body>
+
+</html>

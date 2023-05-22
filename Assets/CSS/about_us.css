@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+    font-family: 'Eczar', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 174px;
+    font-family: Russo One;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+.a1 {
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.a1:hover {
+    transition: .6s;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+}
+
+#profile {
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+main {
+    margin-top: 150px;
+}
+
+#welcome {
+    background-image: linear-gradient(to left,
+            #000000 50%,
+            #b300ff 50%,
+            #54c5d6);
+    background-size: 200% 100%;
+    background-position: 100%;
+    display: inline-block;
+    padding: 5px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 42px;
+    margin-left: 46%;
+    font-weight: bolder;
+}
+
+/* #welcome:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+} */
+
+#welcome:hover {
+    background-position: 0;
+}
+
+#welcome:hover::before {
+    width: 100%;
+}
+
+#welcome_msg {
+    text-align: center;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+#web_name {
+    color: rgb(255, 77, 0);
+}
+
+.goal {
+    background-color: rgb(255, 247, 236);
+}
+
+#heading_goal {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#detail {
+    font-size: 38px;
+}
+
+#goal_img {
+    height: 400px;
+    border-radius: 5px;
+}
+
+.ourstory {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../Images/wallpaperflare.com_wallpaper.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.ourstory p{
+    color: white;
+}
+
+#heading_story {
+    text-align: center;
+    font-size: 42px;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+.story_detail {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0;
+}
+
+#thankyou {
+    background-image: linear-gradient(to right,
+            #b300ff,
+            #54c5d6 50%,
+            #000000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 32px;
+    margin-left: 34%;
+    font-weight: bolder;
+}
+
+/* #thankyou:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+} */
+
+#thankyou:hover {
+    background-position: 0;
+}
+
+#thankyou:hover::before {
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 0;
+    font-family: Russo One;
+}
+
+.icons {
+    /* margin-top: 20px; */
+    height: 30px;
+    width: 30px;
+    /* margin-left: 40px; */
+}
+
+.footer_a {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#follow {
+    color: whitesmoke;
+    font-size: 20px;
+    width: 106px;
+    margin-top: 35px;
+    text-shadow: none;
+}
+
+.copyright {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+}
+
+  #story, #story1, #story2{
+    /* font-size: 28px; */
+    color: white;
+    text-align: center;
+  }

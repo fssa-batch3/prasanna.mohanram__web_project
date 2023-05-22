@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/about_us.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
+</head>
+
+<body>
+
+
+    <!--Navigations-->
+
+
+
+    <header>
+        <div class="nav">
+            <a href="../../index.html"><img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png"
+                    alt="logo"></a>
+
+            <div class="options">
+                <a class="a1" href="../Buy Bike/newold.html">Buy Bike</a>
+                <a class="a1" href="../Sell Bike/sbike-pdetails.html">Sell Bike</a>
+                <a class="a1" href="../review.html">Review of Bike</a>
+                <a class="a1" href="../Price List/bprice.html">Price List of Bike</a>
+                <a class="a1" href="../About/about_us.html">About</a>
+                <a class="a1" href="../Account/signup.html">Signup/login</a>
+                <a href="../../Pages/Account/profile.html"><img id="profile"
+                        src="../../Assets/Images/account_circle_FILL0_wght400_GRAD0_opsz48.png"
+                        alt="profile_nav_img"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <h1 id="welcome">Welcome</h1>
+        <br>
+        <h3 id="welcome_msg">At <span id="web_name">BIKERZ ZONE</span>, we believe everyone deserves to have a bike.
+        </h3>
+
+        <div class="goal">
+            <h5 id="heading_goal">Our Goal</h5>
+            <div class="details">
+                <p id="detail">Our goal is to remove any technical or financial barriers that can prevent you from
+                    making your own
+                    website. Our powerful tools empower individuals and business owners to create a website, sell
+                    online, or reach global audiences. Whether you're a beginner or website expert, we're excited to
+                    help you on your journey!</p>
+                <img id="goal_img" src="../../Assets/Images/pexels-photo-2116475.jpeg" alt="bike">
+            </div>
+        </div>
+
+
+
+        <div class="ourstory">
+            <h5 id="heading_story">Our Story</h5>
+            <p id="story" class="story_detail"></p>
+            <p id="story1" class="story_detail"></p>
+            <p id="story2" class="story_detail"></p>
+        </div>
+
+        <p id="thankyou">Thank You for Visiting Our Website</p>
+    </main>
+
+
+    <!--Footer-->
+
+
+    <footer>
+        <div class="foot">
+            <img id="logo" src="../../Assets/Images/BIKERZ_ZONE-removebg-preview.png" alt="logo">
+            <p id="follow">Follow us:</p>
+            <a class="footer_a" href="https://www.linkedin.com/in/prasanna-balaji-1835a9251"><img class="icons"
+                    src="../../Assets/Images/linkedin.png" alt="linkedin image"></a>
+            <a class="footer_a"
+                href="https://www.instagram.com/invites/contact/?i=mqxel6l8j6sc&utm_content=keud4xo"><img class="icons"
+                    src="../../Assets/Images/instagram (1).png" alt="instagram image"></a>
+            <a class="footer_a" href="https://mobile.twitter.com/PRaSannaBrokeN"><img class="icons"
+                    src="../../Assets/Images/twitter.png" alt="twitter image"></a>
+            <a class="footer_a" href="https://youtube.com/@user-yr8hg8ij1b"><img class="icons"
+                    src="../../Assets/Images/youtube.png" alt="youtube image"></a>
+            <a class="footer_a" href="https://www.facebook.com/prasanna.balaji.796?mibextid=ZbWKwL"><img class="icons"
+                    src="../../Assets/Images/facebook.png" alt="facebook image"> </a>
+        </div>
+        <hr>
+        <div class="foot1">
+            <p class="copyright">All &copy Rights Reserved by BIKERZ ZONE</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
+    <script>
+
+
+        const textPara1 = `Our team started in the web hosting industry. After a few years, we discovered there were too many challenges to making a website. Traditional web hosting services were complicated and expensive to manage.`;
+
+        const textPara2 = `Seeing a need for simplicity, the Website.com site builder was born. We wanted to
+        offer a website building platform that would require no coding skills or design experience, with
+        everything needed to get published online. You can simply focus on creating an amazing website that
+        reflects your brand.`;
+
+        const textPara3 = `After seeing an increased need for ecommerce solutions, we developed one of the
+        only fully-featured, free and commission-free online store builders. As our global userbase grew, we
+        expanded our editor with the ability to make multilingual websites.`;
+
+
+
+        let index = 0;
+        const storyElement = document.getElementById("story");
+
+        function type1() {
+            if (index < textPara1.length) {
+                storyElement.innerHTML += textPara1.charAt(index);
+                index++;
+                setTimeout(type1, 15);
+            }
+        }
+        
+
+
+        let index1 = 0;
+        const storyElement1 = document.getElementById("story1");
+
+        function type2() {
+            if (index1 < textPara2.length) {
+                storyElement1.innerHTML += textPara2.charAt(index1);
+                index1++;
+                setTimeout(type2, 15);
+            }
+        }
+        
+
+
+        let index2 = 0;
+        const storyElement2 = document.getElementById("story2");
+
+        function type3() {
+            if (index2 < textPara3.length) {
+                storyElement2.innerHTML += textPara3.charAt(index2);
+                index2++;
+                setTimeout(type3, 15);
+            }
+        }
+        type1();
+        type2();
+        type3();
+
+
+        if(!localStorage.getItem("profile_details")){
+            Notify.error("Please Login!!");
+            setTimeout(redirect,1500)
+        }
+       
+
+        function redirect() {
+            window.location.href = "../../Pages/Account/login.html";
+        }
+
+
+    </script>
+</body>
+
+</html>
