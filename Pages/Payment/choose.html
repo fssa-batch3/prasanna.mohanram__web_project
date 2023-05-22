@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../../Assets/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../../Assets/CSS/styles.css">
     <link rel="stylesheet" href="../../Assets/CSS/upi.css">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
@@ -461,6 +463,7 @@
 
     </script>
 
+<script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
 
     <script>
 
@@ -632,6 +635,7 @@
 
 
 if(!localStorage.getItem("profile_details")){
+    Notify.error("Please Login!!");
             setTimeout(redirect,1500)
         }
        

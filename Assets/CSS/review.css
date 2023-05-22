@@ -301,11 +301,41 @@ hr {
     padding: 20px;
     background-color: rgb(14, 14, 14);
     border-radius: 5px;
-    animation-name: move;
+    animation-name: right;
     animation-duration: 20s;
     animation-direction: normal;
     animation-iteration-count: infinite;
     overflow: hidden;
+}
+
+@keyframes right {
+    0% {
+        transform: translate(0px);
+    }
+
+    20% {
+        transform: translate(450px);
+    }
+
+    40% {
+        transform: translate(900px);
+    }
+
+    60% {
+        transform: translate(1350px);
+    }
+
+    /* 80% {
+        transform: translate(-900px);
+    } */
+
+    100% {
+        transform: translate(0px);
+    }
+
+    /* 110% {
+        transform: translate(0px);
+    } */
 }
 
 .user_name_honda {

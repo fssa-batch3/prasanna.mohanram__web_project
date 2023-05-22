@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecting New or Old Bike</title>
     <link rel="icon" type="image" href="../../Assets/Images/BIKERZ ZONE.png">
+    <link rel="stylesheet" href="../../Assets/CSS/notify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
 </head>
 
 <body>
@@ -75,10 +77,13 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
     <script>
 
 
         if (!localStorage.getItem("profile_details")) {
+            Notify.error("Please Login!!");
             setTimeout(redirect, 1500)
         }
 
